@@ -1,0 +1,26 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<main class="page registration-page">
+    <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14);margin-top: -50px;height: 800px;">
+        <div class="container">
+            <div class="block-heading">
+                <h2>Arcano pessoal</h2>
+                <p>
+                    &nbsp; &nbsp; -Digite seu nome completo para saber seu arcano pessoal.<br>- As mulheres casadas devem fazer a análise a partir do nome de solteira (batismo)<br>&nbsp;- Jr. (Júnior), Filho, Neto ou Sobrinho - não precisam ser digitados
+                    (Ex. João Oliveira Filho, digite: João Oliveira).<br>
+                </p>
+            </div>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="name">Nome completo</label>
+                    <input class="form-control item" type="text" name="name" id="name">
+                </div>
+                <button class="btn btn-primary btn-block" type="submit" style="background-color: rgba(80,38,130,0.94);">OK</button>
+                <a class="btn btn-primary btn-block" role="button" href="/tarot" style="background-color: rgba(80,38,130,0.94);margin-top: 42px;width: 72px;height: 35px;margin-left: 348px;">Voltar</a>
+            </form>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

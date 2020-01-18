@@ -1,0 +1,84 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<main class="page landing-page" style="margin-top: -50px">
+    <section class="clean-block clean-hero" style="background-image: url(&quot;{{ url_for('static', filename='img/stars-1366x768-purple-cosmos-hd-7172.jpg') }}&quot;);color: rgba(73,9,255,0.04);padding-top: 0;margin-top: -10px;">
+        <div class="text" style="width: 400px;height: 400px;font-family: Adamina, serif;">
+            <h2 style="font-size: 150px;margin-bottom: 30px;height: 150px;color: #d8b511;">Qæl<br><br><br></h2>
+            <p style="color: #d8b511;font-size: 30px;">Caminho dos iluminados</p>
+        </div>
+    </section>
+    <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14);">
+        <div class="container" id="sobre">
+            <div data-aos="zoom-in-up" class="block-heading">
+                <h1 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;font-size: 54px;">Sobre nós</h1>
+                <p style="background-size: auto;opacity: 1;max-width: 800px;font-size: 16px;">
+                    Antes de tudo Qael não é uma religião, e sim um caminho espiritual que visa o despertar e iluminação do individuo. &nbsp;Sem um livro sagrado ou doutrinas, não existem verdades absolutas, tudo é mutavel e questionavel o que descaracteriza
+                    Qael como uma religião. Seu objetivo é guiar as pessoas em um caminho espiritual a fim de se conhecer, se superar e alcançar a tão sonhada iluminação.&nbsp;
+                </p>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col-md-6"><img class="img-thumbnail" src="{{ url_for('static', filename='img/Quando-chegam-ao-PLANO-ESPIRITUAL.jpg') }}" style="width: 540px;height: 300px;"></div>
+                <div class="col-md-6">
+                    <div class="text-left getting-started-info">
+                        <h3>Venha a uma das reuniões</h3>
+                        <p class="text-left">Nos reunimos todos domingos a partir das 19:30 em Goiânia e aceitamos qualquer pessoa de qualquer idade e religião. Entre em contato para mais informações.</p><a class="btn btn-outline-light btn-lg d-lg-flex justify-content-lg-center"
+                                                                                                                                                                                                               role="button" href="contact-us.html" style="background-position: center;background-color: rgba(80,38,130,0.94);color: rgb(255,255,255);">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="numerologia">
+            <div data-aos="zoom-in-up" class="block-heading">
+                <h1 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;font-size: 54px;">Numerologia<br>Qael</h1>
+                <p style="background-size: auto;font-size: 16px;opacity: 1;max-width: 800px;"></p>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col-md-6"><img class="img-thumbnail" src="{{ url_for('static', filename='img/download.jpg') }}" style="background-size: auto;height: 300px;width: 540px;"></div>
+                <div class="col-md-6">
+                    <div class="text-left getting-started-info">
+                        <h3></h3>
+                        <p class="text-left">
+                            A numerologia se faz muito presente em nossas vidas, os números têm o poder de predefinir o nosso futuro e reger nosso presente.<br>Aqui é feita a numerologia do seu nome e data de nascimento sobre os conceitos e crenças do
+                            caminho de Qael<br><br>
+                        </p><a class="btn btn-outline-light btn-lg d-lg-flex justify-content-lg-center" role="button" href="numerologia.html" style="background-position: center;background-color: rgba(80,38,130,0.94);color: rgb(255,255,255);">Faça a sua</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="tarot">
+            <div data-aos="zoom-in-up" class="block-heading">
+                <p style="background-size: auto;font-size: 16px;opacity: 1;max-width: 800px;"></p>
+                <h1 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;font-size: 54px;">Tarot</h1>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col-md-6"><img class="img-thumbnail" src="{{ url_for('static', filename='img/tarot/cartas-de-tarot-para-2020.jpg') }}" style="background-size: auto;height: 300px;width: 540px;"></div>
+                <div class="col-md-6">
+                    <div class="text-left getting-started-info">
+                        <h3></h3>
+                        <p class="text-left">Tarot é um jogo de cartas antigo que pode ser ser entendido como uma linguagem simbólica que traduz o cosmo em sua estrutura e dinâmica e se mostra profundamente influente na sua vida.<br><br></p>
+                        <a class="btn btn-outline-light btn-lg d-lg-flex justify-content-lg-center" role="button" href="/tarot" style="background-position: center;background-color: rgba(80,38,130,0.94);color: rgb(255,255,255);">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="temperamentos">
+            <div data-aos="zoom-in-up" class="block-heading">
+                <p style="background-size: auto;font-size: 16px;opacity: 1;max-width: 800px;"></p>
+                <h1 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;font-size: 54px;">Temperamentos</h1>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col-md-6"><img class="img-thumbnail" src="{{ url_for('static', filename='img/personalidad-1.jpg') }}" style="background-size: auto;height: 300px;width: 540px;"></div>
+                <div class="col-md-6">
+                    <div class="text-left getting-started-info">
+                        <h3></h3>
+                        <p class="text-left"><br>Existem quatro temperamentos que definem nossa personalidade. São eles: Sanguíneo, melancólico, colérico e fleumático e cada um possui suas particularidades. Clique abaixo e descubra em qual você se encaixa.</p>
+                        <a class="btn btn-outline-light btn-lg d-lg-flex justify-content-lg-center" role="button" href="/temperamentos" style="background-position: center;background-color: rgba(80,38,130,0.94);color: rgb(255,255,255);">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

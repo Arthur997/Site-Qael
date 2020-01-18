@@ -1,0 +1,41 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+
+<main class="page contact-us-page">
+    <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14); margin-top: -30px;">
+        <div class="container">
+            <div class="block-heading">
+                <h2 class="text-info">Fale conosco</h2>
+                <p>Deixe seus dados e entraremos em contato, ou nos mande uma mensagem.</p>
+            </div>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input class="form-control" type="text" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Numero</label>
+                    <input class="form-control" type="tel" name="numero">
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <input class="form-control" type="text" name="assunto">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="form-control" name="mensagem"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit" value="submit" id="enviar" style="background-color: rgba(80,38,130,0.94);">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

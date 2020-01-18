@@ -1,0 +1,99 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<main class="page registration-page">
+    <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14);margin-top: -60px;height: 800px;">
+        <div class="container">
+            <div class="block-heading">
+                <h2 class="text-dark">Numerologia</h2>
+                <p>Resultado</p>
+            </div>
+            <div class="table-responsive">
+
+                {% if (nome and data): %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>NOME: {{nome}}</th>
+                            <th style="margin-top: 0px;">ANIVERSARIO: {{data}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CONSOANTE: {{resultNome['CONSOANTE']}}</td>
+                            <td>DIA: {{resultData['DIA']}}</td>
+                        </tr>
+                        <tr>
+                            <td>VOGAL: {{resultNome['VOGAL']}}</td>
+                            <td>MES: {{resultData['MES']}}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ANO: {{resultData['ANO']}}</td>
+                        </tr>
+                        <tr>
+                            <td>TOTAL: {{resultNome['TOTAL']}}</td>
+                            <td>TOTAL: {{resultData['TOTAL']}}</td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                {% elif (nome) %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>NOME: {{nome}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CONSOANTE: {{resultNome['CONSOANTE']}}</td>
+                        </tr>
+                        <tr>
+                            <td>VOGAL: {{resultNome['VOGAL']}}</td>
+                        </tr>
+                        <tr>
+                            <td>TOTAL: {{resultNome['TOTAL']}}</td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                {% elif (data) %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="margin-top: 0px;">ANIVERSARIO: {{data}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DIA: {{resultData['DIA']}}</td>
+                        </tr>
+                        <tr>
+                            <td>MES: {{resultData['MES']}}</td>
+                        </tr>
+                        <tr>
+                            <td>ANO: {{resultData['ANO']}}</td>
+                        </tr>
+                        <tr>
+                            <td>TOTAL: {{resultData['TOTAL']}}</td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                {% endif %}
+            </div>
+            <h4 class="text-left text-dark d-inline" style="width: 1107px;height: 134px;margin-left: 0px;">
+                <br><br>Site em construção, a traduçao dos numeros serão em breve adicionadas. Até la, leia mais sobre seus números em: &nbsp;
+                <a href="http://www.planetaesoterico.com.br/numerologia/o-significado-dos-numeros.html">
+                    http://www.planetaesoterico.com.br/numerologia/o-significado-dos-numeros.html
+                </a>
+                <br>
+            </h4>
+            <br><br>
+            <a class="btn btn-outline-light btn-lg d-lg-flex justify-content-lg-center" role="button" href="/numerologia" style="background-position: center;background-color: rgba(80,38,130,0.94);color: rgb(255,255,255);width: 93px;">Voltar</a>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

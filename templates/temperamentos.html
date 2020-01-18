@@ -1,0 +1,69 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<main class="page landing-page">
+    <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14); margin-top: -55px">
+        <div class="container" id="temperamentos">
+            <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
+                <h1 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;font-size: 54px;">Temperamentos</h1><img class="img-thumbnail img-fluid" src="{{ url_for('static', filename='img/personalidad-1.jpg') }}" style="background-size: auto;height: 300px;width: 540px;margin-top: 20px;margin-bottom: -20px;">
+            </div>
+            <div class="row align-items-center visible" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;"></h3>
+                        <p class="text-left" style="margin-top: -95px;"><br><br>Existem quatro temperamentos principais que definem nossa personalidade. São eles: Sanguíneo, melancólico, colérico e fleumático e cada um possui suas particularidades.&nbsp;<br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;margin-top: -30px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;">Colérico</h3>
+                        <p class="text-left">
+                            <br>Este temperamento é explosivo,&nbsp;ambicioso e dominador. Indivíduos coléricos são determinados e possuem grande capacidade de planejamento, além de muita energia e impulsividade. São líderes natos e explosivos.<br><br><strong>Pontos fortes:&nbsp;</strong>determinação,
+                            habilidade de liderança e praticidade<br><strong>Pontos que precisam ser trabalhados:&nbsp;</strong>egocentrismo, intolerância e impaciência.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;">Fleumático</h3>
+                        <p class="text-left">
+                            <br>Este temperamento é sonhador, pacífico,&nbsp;dócil. Os fleumáticos prezam a rotina, o silêncio e dificilmente perdem o controle, pois costumam avaliar antes de reagir. São pacientes, observadores, disciplinados, preferem
+                            não manifestar suas opiniões em público e não costumam reagir bem às críticas.<br><br><strong>Pontos fortes:&nbsp;</strong>são equilibrados e confiáveis;<br><strong>Pontos que precisam ser trabalhados:</strong>&nbsp;lentidão,
+                            resistência as mudanças e indecisão.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;margin-top: -50px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;">Melancólico</h3>
+                        <p class="text-left">
+                            <br>Este temperamento é tímido, artístico e solitário. Os melancólicos têm a sensibilidade&nbsp;muito aflorada, e são pessoas profundas, detalhistas e introvertidas, com tendência a guardar seus sentimentos. São fiéis, desconfiados
+                            e tendem a escolher profissões que possam exercer sozinhos.<br><br><strong>Pontos fortes:&nbsp;</strong>lealdade, dedicação e sensibilidade<br><strong>Pontos que precisam ser trabalhados:&nbsp;</strong>egoísmo, pessimismo
+                            e inflexibilidade.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;margin-top: -50px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;">Sanguíneo</h3>
+                        <p class="text-left">
+                            <br>Este temperamento é expansivo, otimista e impulsivo. Extrovertidos e sensíveis, os sanguíneos são indivíduos que não passam desapercebidos,&nbsp;pois são espontâneos e gostam de interagir. Além disso, costumam fazer gestos
+                            largos e falar em público.<br><br><strong>Pontos fortes:</strong>&nbsp;são comunicativos, resilientes, adaptáveis e entusiastas.<br><strong>Pontos que precisam ser trabalhados:</strong>&nbsp;impulsividade, falta de atenção,
+                            superficialidade e exagero.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,105 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<main class="page landing-page">
+    <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14);margin: -60px;">
+        <div class="container" id="temperamentos">
+            <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
+                <h1 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;font-size: 54px;">Tarot</h1><img class="img-fluid" src="{{ url_for('static', filename='img/tarot/cartas-de-tarot-para-2020.jpg') }}" style="width: 558px;">
+            </div>
+            <div class="row align-items-center visible" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;"></h3>
+                        <p class="text-left" style="margin-top: -95px;"><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;margin-top: -30px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;"><strong>O que é Tarot?</strong></h3>
+                        <p class="text-left">
+                            <br>T<em>arot</em>, baralho ou&nbsp;<em>arcanos maiores e menores</em>&nbsp;, consistem numa única e mesma coisa. Trata-se de um jogo de 78 cartas, que se difunde a partir da segunda metade do século 14, na Europa cristã, com
+                            iconografia cristã.<br><br>Alem de um jogo o tarot, ou tarô, pode ser entendido como uma linguagem simbólica que traduz o cosmo em sua constituição e eterna mudança, em sua estrutura e dinâmica. Ele aparece na Europa, num
+                            momento em que várias escolas esotéricas e corporações de artistas, buscavam transmitir conhecimentos, não por palavras, mas por imagens que convidavam à reflexão, à investigação, para serem corretamente assimiladas. É
+                            o caso, por exemplo, dos mestres e praticantes da Alquimia, que produziram livros de gravuras, sem maiores comentários por escrito, conhecidos como&nbsp;<em>Mutus Liber, &nbsp;do latim significa Livro mudo. Aqui so falaremos sobre os Arcanos Maiores.</em><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;"><strong>O que sao arcanos maiores?</strong></h3>
+                        <p class="text-left" style="margin-bottom: 0px;">
+                            <br>Também conhecidos como trunfos, os Arcanos Maiores revelam as&nbsp;lições espirituais&nbsp;que você terá que aprender na vida, enquanto que os Arcanos Menores falam mais sobre os eventos que acontecem. A palavra “Arcano”
+                            significa “segredo, mistério”. Os 22 Arcanos Maiores do Tarot são cartas poderosas que revelam quais são as situações que provavelmente você não conseguirá escapar delas.&nbsp;<br><br>Os seus Arcanos Maiores estão gravados
+                            no seu destino. Eles irão aparecer na sua vida em algum momento e você terá que encontrar uma maneira de aprender com eles para que consiga encontrar&nbsp;felicidade&nbsp;e paz em todas as áreas da sua vida. O&nbsp;livre
+                            arbítrio, nesses casos, aparece na forma como você escolhe solucionar o problema.<br><br>Algumas das grandes lições espirituais dos Arcanos Maiores referem-se a fé, rendição, o poder de cura da solidão,&nbsp;sabedoria,
+                            morte e renascimento, curando seu eu sombrio e paciência.<br><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border rounded-0 d-sm-flex clean-block add-on call-to-action blue" style="background-image: url(&quot;{{ url_for('static', filename='img/barra.png')}}&quot;);background-position: top;background-size: cover;background-repeat: no-repeat;height: 113px;"><a class="btn btn-outline-light text-uppercase text-center" role="button" href="/arcano" style="width: 568px;height: 35px;background-color: rgba(255,255,255,0.08);">DeSCUBRA SEU ARCANO PESSOAL</a></div>
+        <div class="container" id="cartas">
+            <div class="row align-items-center" data-aos="zoom-in-up">
+                <div class="col" style="padding-top: 35px;margin-top: 0px;">
+                    <div class="text-left getting-started-info">
+                        <h3 style="margin-bottom: 5px;">Clique nas cartas para conhece-las.</h3>
+                    </div>
+                    <div class="table-responsive">
+
+                        <table class="table">
+                            <thead>
+                                <tr></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_22_louco.asp"><img src="{{ url_for('static', filename='img/tarot/0-22-louco.jpg') }}">&nbsp;<strong>0 ou 22 - LOUCO</strong><br></a>&nbsp;</td>
+                                    <td><strong>&nbsp;</strong><a href="http://www.clubedotaro.com.br/site/m32_01_magico.asp"><img src="{{ url_for('static', filename='img/tarot/mago-01.jpg') }}">&nbsp; <strong>1 - MAGO</strong></a>&nbsp;<br><br></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_02_papisa.asp"><img src="{{ url_for('static', filename='img/tarot/2 papisa.jpg') }}"><strong>&nbsp;2 - PAPISA</strong></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_03_imperatriz.asp"><img src="{{ url_for('static', filename='img/tarot/3 imperatriz.jpg') }}">&nbsp;<strong>3 - IMPERATRIZ</strong><br><br></a>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_04_imperador.asp"><img src="{{ url_for('static', filename='img/tarot/4 imperador.jpg') }}"><strong>&nbsp;4 - IMPERADOR</strong><br><br></a></td>
+                                    <td><strong>&nbsp;</strong><a href="http://www.clubedotaro.com.br/site/m32_05_papa.asp"><img src="{{ url_for('static', filename='img/tarot/5 PAPA.jpg') }}">&nbsp;<strong>5 - PAPA</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_06_enamorado.asp"><img src="{{ url_for('static', filename='img/tarot/6 NAMORADOS.jpg') }}"><strong>&nbsp;6 - NAMORADOS</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_07_carro.asp"><img src="{{ url_for('static', filename='img/tarot/7 CARROS.jpg') }}">&nbsp;<strong>7 - CARRO</strong><br><br></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_08_justica.asp"><img src="{{ url_for('static', filename='img/tarot/8 JUSTIÇA.jpg') }}"><strong>&nbsp;8 - JUSTIÇA</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_09_ermitao.asp"><img src="{{ url_for('static', filename='img/tarot/9 EREMITA.jpg') }}"><strong>&nbsp;9 - EREMITA</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_10_roda_fortuna.asp"><img src="{{ url_for('static', filename='img/tarot/10 RODA DA FORTUNA.jpg') }}"><strong>&nbsp;10 - RODA DA FORTUNA</strong><br><br></a></td>
+                                    <td>&nbsp;<a href="http://www.clubedotaro.com.br/site/m32_11_forca.asp"><img src="{{ url_for('static', filename='img/tarot/11 FORÇA.jpg') }}"><strong>&nbsp; 11 - FORÇA</strong><br></a><br></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_12_pendurado.asp"><img src="{{ url_for('static', filename='img/tarot/12 PENDURADO.jpg') }}">&nbsp;<strong>12 - PENDURADO</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_13_sem_nome.asp"><img src="{{ url_for('static', filename='img/tarot/13 MORTE.jpg') }}">&nbsp;<strong>13 - MORTE</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_14_temperanca.asp"><img src="{{ url_for('static', filename='img/tarot/14 TEMPERANÇA.jpg') }}"><strong>&nbsp;14 - TEMPERANÇA</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_15_diabo.asp"><img src="{{ url_for('static', filename='img/tarot/15 DIABO.jpg') }}">&nbsp;<strong>15 - DIABO</strong><br><br></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_16_torre.asp"><img src="{{ url_for('static', filename='img/tarot/16 TORRE.jpg') }}"><strong>&nbsp;16 - TORRE</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_17_estrela.asp"><img src="{{ url_for('static', filename='img/tarot/17 ESTRELA.jpg') }}">&nbsp;<strong>17 - ESTRELA</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_18_lua.asp"><img src="{{ url_for('static', filename='img/tarot/18 LUA.jpg') }}">&nbsp;<strong>18 - LUA</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_19_sol.asp"><img src="{{ url_for('static', filename='img/tarot/19 SOL.jpg') }}"><strong>&nbsp;19 - SOL</strong><br><br></a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_20_julgamento.asp"><img src="{{ url_for('static', filename='img/tarot/20 JULGAMENTO.jpg') }}"><strong>&nbsp;20 - JULGAMENTO</strong><br><br></a></td>
+                                    <td><a href="http://www.clubedotaro.com.br/site/m32_21_mundo.asp"><img src="{{ url_for('static', filename='img/tarot/21 MUNDO.jpg') }}"><strong>&nbsp;21 - MUNDO</strong><br><br></a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
