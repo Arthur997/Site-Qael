@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Qael</title>
+    <title> {% block title %}Qael{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,8 +29,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Filterable-Gallery.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Basic-fancyBox-Gallery-v2.css')}}">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png')}}">
 </head>
+
+
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding-top:5px;padding-bottom:5px;background-image:url({{ url_for('static', filename='img/barra.png') }});background-size:cover;background-position:left;">
         <div class="container">
@@ -41,43 +44,50 @@
                         class="navbar-toggler">
                 <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="  background-color: rgba(255,255,255,0);">
+
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link" style="  color: #d8b511;">Home</a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="/" style="color: #d8b511;">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/#sobre" class="nav-link" style="  color: rgb(216,181,17);">Sobre nós</a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="/numerologia" style="color: #d8b511;">Numerologia</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="/temperamentos" style="color: #d8b511;">Temperamentos</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/tarot" style="color: rgb(216,181,17);">Tarot</a>
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/tarot" style="color: rgb(216,181,17);">Tarô</a>
                         <div class="dropdown-menu" role="menu" style="background-color: #f3ddfe;">
                             <a class="dropdown-item" role="presentation" href="/tarot">O que é?</a>
-                            <a class="dropdown-item" role="presentation" href="/arcano">Arcano Pessoal</a>
+                            <a class="dropdown-item" role="presentation" href="/arcano">Faça seu arcano pessoal</a>
                             <a class="dropdown-item" role="presentation" href="/tarot#cartas">As cartas</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="/numerologia" class="nav-link" style="  color: #d8b511;">Numerologia</a>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/totem" style="color: rgb(216,181,17);">Totem</a>
+                        <div class="dropdown-menu" role="menu" style="background-color: #f3ddfe;">
+                            <a class="dropdown-item" role="presentation" href="/totem">O que é?</a>
+                            <a class="dropdown-item" role="presentation" href="/totem#os_totens">Quais são?</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="/temperamentos" class="nav-link" style="  color: #d8b511;">Temperamentos</a>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/wallpapers" style="color: rgb(216,181,17);">Wallpaper</a>
+                        <div class="dropdown-menu" role="menu" style="background-color: #f3ddfe;">
+                            <a class="dropdown-item" role="presentation" href="/wallpapers">Para computador</a>
+                            <a class="dropdown-item" role="presentation" href="/wallpapers-cel">Para celular</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="/contato" class="nav-link" style="  color: rgb(216,181,17);">Contato</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="/wallpapers" style="color: rgb(216,181,17);">Wallpapers</a>
-                    </li>
-
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contato" style="color: rgb(216,181,17);filter: blur(0px) contrast(NaN%);">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    {% block content %}{% endblock %}
+    {% block content %}
+    {% endblock %}
     <footer class="page-footer dark">
         <div class="footer-copyright">
-            <p>Qael © 2019</p>
+            <p>Qael © 2020</p>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
