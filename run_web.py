@@ -18,14 +18,14 @@ def send_email(destinatario, msg):
     server.quit() # Logout of the email server
 
 @app.route('/')
-def index(): 
+def index():
     return render_template("index.html")
 
 @app.route('/contato', methods=['POST', 'GET'])
 def contato():
 
-    if request.method == 'POST':  
-          
+    if request.method == 'POST':
+
         nome = request.form.get('name')
         email = request.form.get('email')
         numero = request.form.get('numero')
@@ -59,22 +59,22 @@ def numerologia():
 
             data = request.form.get('date')
             if data:
-                #data esta no formato yyyy-mm-dd, isso inverte a strig    
-                data = data[8:]+data[4:8]+data[0:4] 
-            
+                #data esta no formato yyyy-mm-dd, isso inverte a strig
+                data = data[8:]+data[4:8]+data[0:4]
+
                 d = NumData(data)
-                resultData = d.runData(data) 
- 
+                resultData = d.runData(data)
+
             return render_template('resultNumerologia.html',resultNome=resultNome,
                                                             resultData=resultData,
                                                             nome=nome,
                                                             data=data)
-        
+
         except Exception as e:
             pass
 
-        
-     
+
+
     return render_template("numerologia.html")
 
 @app.route('/temperamentos')
@@ -167,9 +167,9 @@ def totem_golfinho():
 def totem_jaguar():
     return render_template('totens/totem_jaguar.html')
 
-@app.route('/totem_lilebula', methods=['POST', 'GET'])
-def totem_lilebula():
-    return render_template('totens/totem_lilebula.html')
+@app.route('/totem_libelula', methods=['POST', 'GET'])
+def totem_libelula():
+    return render_template('totens/totem_libelula.html')
 
 @app.route('/totem_lobo', methods=['POST', 'GET'])
 def totem_lobo():
@@ -200,4 +200,3 @@ def totem_urso():
 if __name__ == '__main__':
 
     app.run(debug = True, port = 3044)
- 

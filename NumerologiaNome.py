@@ -29,23 +29,23 @@ class NumNome:
     def calcular(self, listaCaracteres):
         soma = 0
         for i in listaCaracteres:
-            if i in ['A', 'J', 'S']:
+            if i in ['A', 'Á', 'Â', 'J', 'S']:
                 soma = soma + 1
             elif i in ['B', 'K', 'T']:
                 soma = soma + 2
-            elif i in ['C', 'L', 'U']:
+            elif i in ['C', 'Ç', 'L', 'U', 'Ú']:
                 soma = soma + 3
             elif i in ['D', 'M', 'V']:
                 soma = soma + 4
-            elif i in ['E', 'N', 'W']:
+            elif i in ['E', 'É', 'Ê', 'N', 'W']:
                 soma = soma + 5
-            elif i in ['F', 'O', 'X']:
+            elif i in ['F', 'O', 'Ó', 'Ô', 'X']:
                 soma = soma + 6
             elif i in ['G', 'P', 'Y']:
                 soma = soma + 7
             elif i in ['H', 'Q', 'Z']:
                 soma = soma + 8
-            elif i in ['I', 'R']:
+            elif i in ['I', 'Í', 'R']:
                 soma = soma + 9
 
         return soma
