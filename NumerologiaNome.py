@@ -12,7 +12,7 @@ class NumNome:
         consoantes = []
         
         for i in letras:
-            if i in ["A", "E", "I", "O", "U"]:
+            if i in ['A', 'Á', 'Â', 'E','É', 'Ê', 'I', 'Í', 'O', 'Ó', 'Ô', 'U', 'Ú']:
                 vogais.append(i)
             else:
                 if i != ' ':

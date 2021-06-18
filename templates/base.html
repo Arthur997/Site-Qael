@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title> {% block title %}Qael{% endblock %}</title>
+    <title> {% block title %}Caminho de Qael{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,6 +31,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Basic-fancyBox-Gallery-v2.css')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
 </head>
 
 
@@ -38,7 +42,7 @@
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding-top:5px;padding-bottom:5px;background-image:url({{ url_for('static', filename='img/barra.png') }});background-size:cover;background-position:left;">
         <div class="container">
             <a href="/" class="navbar-brand logo" style="  width: 50px; height: 65px;">
-                <i class="fa fa-star" style="color:rgba(0,0,0,0);background-image:url({{ url_for('static', filename='img/qq.png') }});background-color:rgba(174,67,67,0);background-size:cover;width:50px;height:50px;margin:0;margin-bottom:0;">
+                <i class="fa" style="color:rgba(0,0,0,0);background-image:url({{ url_for('static', filename='img/qq.png') }});background-color:rgba(174,67,67,0);background-size:cover;width:50px;height:50px;margin:0;margin-bottom:0;">
                 </i>
             </a><button data-toggle="collapse" data-target="#navcol-1"
                         class="navbar-toggler">
@@ -97,6 +101,8 @@
     <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bs-animation.js') }}"></script>
     <script src="{{ url_for('static', filename='js/Filterable-Gallery-with-Lightbox.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.mask.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.mask.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/Filterable-Gallery.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
@@ -104,5 +110,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+
+
 </body>
 </html>

@@ -1,12 +1,18 @@
 {% extends "base.html" %}
+<title> {% block title %}Se conheça melhor com a Numerologia{% endblock %}</title>
 {% block content %}
 
 <main class="page registration-page">
     <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14); margin-top: -30px; height: 800px">
         <div class="container">
-            <div class="block-heading">
-                <h2 class="text-info">Numerologia</h2>
-                <p>Insira seus dados e se conheça melhor.</p>
+            <div class="block-heading" style="padding-top: 50px;">
+                <h1 class="text-info">Se conheça melhor com a Numerologia de Qael</h1>
+                <p>
+                    A numerologia permite a interpretação de nomes, situações e personalidades,
+                    baseando-se na simbologia dos números e trazendo, assim, ensinamentos.<br>
+                    Através dessa crença podemos saber qual é a nossa missão de vida e descobrir se estamos na direção correta para alcançá-la.
+                </p>
+                <p>Insira seus dados para calculo dos seus numeros de poder.</p>
             </div>
             <form method="post">
                 <div class="form-group">
@@ -15,13 +21,19 @@
                 </div>
                 <div class="form-group">
                     <label for="date">Data de nascimento</label>
-                    <input class="form-control" name="date" type="date">
+                    <input class="form-control item" type="text" name="date" id="date">
                 </div>
-                <button class="btn btn-primary btn-block" type="submit"  id="calcular" style="background-color: rgba(80,38,130,0.94);">Calcular</button>
+                <button class="btn btn-primary btn-block" type="submit" id="calcular" style="background-color: rgba(80,38,130,0.94);">Calcular</button>
             </form>
         </div>
     </section>
 </main>
+
+<script>
+    $(document).ready(function () {
+        $("#date").mask("99/99/9999");
+    });
+</script>
 
 
 {% endblock %}

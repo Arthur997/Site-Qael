@@ -59,9 +59,6 @@ def numerologia():
 
             data = request.form.get('date')
             if data:
-                #data esta no formato yyyy-mm-dd, isso inverte a strig
-                data = data[8:]+data[4:8]+data[0:4]
-
                 d = NumData(data)
                 resultData = d.runData(data)
 
@@ -76,16 +73,6 @@ def numerologia():
 
 
     return render_template("numerologia.html")
-
-@app.route('/temperamentos')
-def temperamentos():
-    return render_template('temperamentos.html')
-
-
-@app.route('/tarot')
-def tarot():
-    return render_template('tarot.html')
-
 
 @app.route('/arcano', methods=['POST', 'GET'])
 def arcanoNome():
@@ -102,6 +89,14 @@ def arcanoNome():
                 pass
 
     return render_template("arcano.html")
+
+@app.route('/temperamentos')
+def temperamentos():
+    return render_template('temperamentos.html')
+
+@app.route('/tarot')
+def tarot():
+    return render_template('tarot.html')
 
 @app.route('/wallpapers')
 def wallpapers():
