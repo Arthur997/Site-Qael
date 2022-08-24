@@ -29,7 +29,7 @@ class NumData():
         return separado  
                 
     def calcular(self, separado):
-   
+
         somaDia  = 0
         somaMes  = 0
         somaAno  = 0
@@ -58,9 +58,9 @@ class NumData():
         reducao = 0
         somaStr = str(soma)
         tamanho = len(somaStr)
-       
+
         while (tamanho > 0):
-           
+
             for i in somaStr:
                 reducao = reducao + int(i)
                 tamanho = tamanho -1

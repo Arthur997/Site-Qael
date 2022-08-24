@@ -3,16 +3,21 @@
 {% block content %}
 
 <main class="page registration-page">
-    <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14); margin-top: -30px; height: 800px">
+    <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14); margin-top: -30px;">
         <div class="container">
-            <div class="block-heading" style="padding-top: 50px;">
+            <div class="block" style="padding-top: 50px; max-width:900px; margin: auto;">
                 <h1 class="text-info">Se conheça melhor com a Numerologia de Qael</h1>
                 <p>
                     A numerologia permite a interpretação de nomes, situações e personalidades,
-                    baseando-se na simbologia dos números e trazendo, assim, ensinamentos.<br>
-                    Através dessa crença podemos saber qual é a nossa missão de vida e descobrir se estamos na direção correta para alcançá-la.
+                    baseando-se na simbologia dos números e trazendo, assim, ensinamentos. Através dessa crença podemos saber qual é a nossa missão de vida e descobrir se estamos na direção correta para alcançá-la.
                 </p>
-                <p>Insira seus dados para calculo dos seus numeros de poder.</p>
+            <h5>Instruções:</h5>
+            <ul>
+                <li>Insira seu nome completo e data de nascimento</li>
+                <li>Não coloque acentos ou outros caractéres além de letras no campo do nome.</li>
+                <li>Selecione a opção "Nome de batismo" caso queira calcular a numerologia do seu nome de batismo de Qael ou deixe desmarcado para o cálculo do seu nome de registro.</li>
+                <li>Se atende a grafia do seu nome de batismo, a letra "y" é diferente de "Y" e "ae" é diferente da letra "æ".</li>
+            </ul>
             </div>
             <form method="post">
                 <div class="form-group">
@@ -22,6 +27,10 @@
                 <div class="form-group">
                     <label for="date">Data de nascimento</label>
                     <input class="form-control item" type="text" name="date" id="date">
+                </div>
+                <div class="form-check" style="margin-bottom: 16px;">
+                    <input type="checkbox" class="form-check-input" name="formCheck-1" id="formCheck-1" />
+                    <label class="form-check-label" for="formCheck-1">Nome de batismo</label>
                 </div>
                 <button class="btn btn-primary btn-block" type="submit" id="calcular" style="background-color: rgba(80,38,130,0.94);">Calcular</button>
             </form>

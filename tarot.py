@@ -34,9 +34,9 @@ class Arcano:
 
         somaStr = str(soma)
         tamanho = len(somaStr)
-       
+
         while (reducao not in range(1,23)):
-           
+
             for i in somaStr:
                 reducao = reducao + int(i)
                 tamanho = tamanho -1
@@ -47,10 +47,8 @@ class Arcano:
         else:
             return reducao
     
-    
     def runNome(self, nome):
         
-
         soma = self.calcular(nome)
         carta = self.reduzir(soma)
 
