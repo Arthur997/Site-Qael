@@ -71,8 +71,8 @@ class NumData():
         else:
             return reducao
 
-    def runData(self, data):
-        dataObj = NumData(data)
+    def runData(self):
+        dataObj = NumData(self.data)
         dic = dataObj.separar()
         t   = dataObj.calcular(dic)
     
@@ -85,9 +85,8 @@ class NumData():
 
         return valores
 
-'''
-n = "12-07-1997"
-x = NumData(n)
-print(n)
-print (x.run())
-'''
+
+# n = "12-07-1997"
+# x = NumData(n)
+# print(n)
+# print (x.runData())

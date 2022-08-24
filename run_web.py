@@ -26,16 +26,16 @@ def numerologia():
             
             if nome and check_box:
                 n = NumNomeBatismo(nome)
-                resultNome = n.runNomeBatismo(nome)
+                resultNome = n.runNomeBatismo()
             
             elif nome:
                 n = NumNomeComum(nome)
-                resultNome = n.runNomeComum(nome)
+                resultNome = n.runNomeComum()
 
             data = request.form.get('date')
             if data:
                 d = NumData(data)
-                resultData = d.runData(data)
+                resultData = d.runData()
 
             return render_template('resultNumerologia.html',resultNome=resultNome,
                                                             resultData=resultData,
@@ -54,20 +54,22 @@ def arcanoNome():
 
     if request.method == 'POST':
         #check_box determina se o nome é comum ou de batismo
-        resultNome = []
-        nome = ""
-        
         check_box = request.form.get('formCheck-1')
         nome = request.form.get('name')
+        data = request.form.get('date') 
         
-        try:
-            if nome and check_box:
-                n = NumNomeBatismo(nome)
-                resultNome = n.runNomeBatismo(nome)
-                return render_template('resultTarot/tarot{}.html'.format(resultNome['TOTAL']))
+        try:              
+            if nome and check_box and data:
+                d = NumData(data)
+                data = d.runData()
+                destino = data['TOTAL']
+                n = Arcano(nome, destino)
+                result = n.runArcano()
+                return render_template('resultTarot/tarot{}.html'.format(result))
+            
             elif nome:
                 n = Arcano(nome)
-                result = n.runNome(nome)
+                result = n.runArcano()
                 return render_template('resultTarot/tarot{}.html'.format(result))
 
         except Exception as e:

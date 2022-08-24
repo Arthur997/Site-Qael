@@ -70,8 +70,8 @@ class NumNomeComum:
             return reducao
     
     
-    def runNomeComum(self, nome):
-        nomeObj = NumNomeComum(nome)
+    def runNomeComum(self):
+        nomeObj = NumNomeComum(self.nome)
         dic = nomeObj.separar()
         v = nomeObj.calcular(dic['vogais'])
         c = nomeObj.calcular(dic['consoantes'])
@@ -82,7 +82,7 @@ class NumNomeComum:
                     'VOGAL'      : nomeObj.reduzir(v),
                     '':'',
                     'TOTAL'       : nomeObj.reduzir(t)
-                  }
+                }
 
         return valores
 
@@ -143,6 +143,7 @@ class NumNomeBatismo:
     def reduzir(self, soma):
         reducao = 0
         somaStr = str(soma)
+        #quantos digitos
         tamanho = len(somaStr)
 
         while (tamanho > 0):
@@ -158,8 +159,8 @@ class NumNomeBatismo:
             return reducao
     
     
-    def runNomeBatismo(self, nome):
-        nomeObj = NumNomeBatismo(nome)
+    def runNomeBatismo(self):
+        nomeObj = NumNomeBatismo(self.nome)
         dic = nomeObj.separar()
         v = nomeObj.calcular(dic['vogais'])
         c = nomeObj.calcular(dic['consoantes'])
@@ -170,7 +171,7 @@ class NumNomeBatismo:
                     'VOGAL'      : nomeObj.reduzir(v),
                     '':'',
                     'TOTAL'       : nomeObj.reduzir(t)
-                  }
+                }
 
         return valores
 
