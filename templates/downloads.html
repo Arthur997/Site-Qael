@@ -1,0 +1,26 @@
+﻿{% extends "base.html" %}
+<title> {% block title %}Downloads Qael{% endblock %}</title>
+{% block content %}
+
+<main class="page registration-page">
+    <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14);margin-top: -50px;height: 800px;">
+        <div class="container">
+            <div class="block" style="padding-top: 50px; max-width:900px; margin: auto;">
+                <h1 style="margin-bottom: 25px;">
+                    Baixe os arquivos relevantes da comunidade.
+                </h1>
+                <h3>Livros:</h3>
+                <ul>
+                    <li><a href="static\downloads\Totens.pdf" download="Totens">Totens de Qael</a></li>
+                </ul>
+                <h3>Letras de Músicas:</h3>
+                <ul>
+                    <li><a href="static\downloads\BABÁ MI.pdf" download="Babá mi">Babá Mi</a></li>
+                    <li><a href="static\downloads\YARA CIFRA.pdf" download="Yara">Yara</a></li>
+                </ul>
+        </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

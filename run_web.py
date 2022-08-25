@@ -177,6 +177,9 @@ def totem_tigre():
 def totem_urso():
     return render_template('totens/totem_urso.html')
 
+@app.route('/downloads', methods=['POST', 'GET'])
+def downloads():
+    return render_template('downloads.html')
 
 
 if __name__ == '__main__':

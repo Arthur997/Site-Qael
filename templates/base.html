@@ -25,12 +25,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/text-box.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/vertical-tabs-with-links-and-contents.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Lightbox-Gallery.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Filterable-Gallery-with-Lightbox.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Filterable-Gallery.css')}}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/Filterable-Gallery-with-Lightbox.css')}}"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/Filterable-Gallery.css')}}"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Basic-fancyBox-Gallery-v2.css')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.ico')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.ico')}}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
@@ -76,10 +76,11 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/wallpapers" style="color: #EDD20E;">Wallpaper</a>
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/downloads" style="color: #EDD20E;">Downloads</a>
                         <div class="dropdown-menu" role="menu" style="background-color: #eee5f3;">
-                            <a class="dropdown-item" role="presentation" href="/wallpapers">Para computador</a>
-                            <a class="dropdown-item" role="presentation" href="/wallpapers-cel">Para celular</a>
+                            <a class="dropdown-item" role="presentation" href="/downloads">Livros/Músicas</a>
+                            <a class="dropdown-item" role="presentation" href="/wallpapers">Wallpapers para computador</a>
+                            <a class="dropdown-item" role="presentation" href="/wallpapers-cel">Wallpapers pelular</a>
                         </div>
                     </li>
                     <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="/contato" style="color: rgb(216,181,17);filter: blur(0px) contrast(NaN%);">Contato</a></li> -->
@@ -100,10 +101,10 @@
     <script src="{{ url_for('static', filename='js/smoothproducts.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bs-animation.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/Filterable-Gallery-with-Lightbox.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='js/Filterable-Gallery-with-Lightbox.js') }}"></script> -->
+    <!-- <script src="{{ url_for('static', filename='js/Filterable-Gallery.js') }}"></script> -->
     <script src="{{ url_for('static', filename='js/jquery.mask.js') }}"></script>
     <script src="{{ url_for('static', filename='js/jquery.mask.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/Filterable-Gallery.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
