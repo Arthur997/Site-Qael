@@ -83,6 +83,12 @@
                             <a class="dropdown-item" role="presentation" href="/wallpapers-cel">Wallpapers pelular</a>
                         </div>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="/artigos" style="color: #EDD20E;">Artigos</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="/sobre_nos" style="color: #EDD20E;">Sobre nós</a>
+                    </li>
                     <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="/contato" style="color: rgb(216,181,17);filter: blur(0px) contrast(NaN%);">Contato</a></li> -->
                 </ul>
             </div>
@@ -90,9 +96,21 @@
     </nav>
     {% block content %}
     {% endblock %}
-    <footer class="page-footer dark">
+    <footer class="page-footer dark" style="padding-top: 1px;">
         <div class="footer-copyright">
-            <p>Qael © 2019</p>
+            <div class="row align-items-center">
+                <div class="col" style="font-size: 25px">
+                    <a href="https://www.instagram.com/qaelcaminho/" target="_blank" style="margin-right: 15px;">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCn61RmXaA1SK_GYxv4VZXnQ" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <p>Qæl © 2019</p>
+                </div>                
+            </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

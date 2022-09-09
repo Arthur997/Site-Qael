@@ -77,6 +77,10 @@ def arcanoNome():
 
     return render_template("arcano.html")
 
+@app.route('/sobre_nos')
+def sobre_nos():
+    return render_template('sobre_nos.html')
+
 @app.route('/temperamentos')
 def temperamentos():
     return render_template('temperamentos.html')
@@ -92,6 +96,10 @@ def wallpapers():
 @app.route('/wallpapers-cel')
 def wallpapers_cel():
     return render_template('wallpaper-cel.html')
+
+@app.route('/artigos', methods=['POST', 'GET'])
+def artigos():
+    return render_template('artigos.html')
 
 @app.route('/totem', methods=['POST', 'GET'])
 def totem():
