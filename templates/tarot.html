@@ -46,10 +46,315 @@
             </div>
         </div>
         <div class="border rounded-0 d-sm-flex clean-block add-on call-to-action blue" style="background-image: url(&quot;{{ url_for('static', filename='img/barra.png')}}&quot;);background-position: top;background-size:cover;background-repeat: no-repeat;height: 113px;">
-            <a class="btn btn-outline-light text-uppercase text-center" role="button" href="/arcano" style="width: 568px;height: 35px;background-color: rgba(255,255,255,0.08);">DESCUBRA SEU ARCANO PESSOAL</a>
+            <a class="btn btn-outline-light text-uppercase text-center" role="button" href="/arcano" style="height: 35px;background-color: rgba(255,255,255,0.08);">DESCUBRA SEU ARCANO PESSOAL</a>
         </div>
         <div class="container" id="cartas">
-            <div class="row align-items-center" data-aos="zoom-in-up">
+            <ul class="cards">
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_22_louco.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/0-22-louco.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">LOUCO</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">0-22</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_01_magico.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/mago-01.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">MAGICO</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">1</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_02_papisa.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/2 papisa.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">PAPISA</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">2</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_03_imperatriz.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/3 imperatriz.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">IMPERATRIZ</h3>            
+                                    <!-- <span class="card__status">0-22</span> -->
+                                </div>
+                            </div>
+                            <p class="card__description">3</p>
+                        </div>
+                    </a>      
+                </li>
+            </ul>
+            <ul class="cards">
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_04_imperador.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/4 imperador.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">IMPERADOR</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">4</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_05_papa.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/5 PAPA.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">PAPA</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">5</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_06_enamorado.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/6 NAMORADOS.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">NAMORADOS</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">6</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_07_carro.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/7 CARROS.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">CARROS</h3>            
+                                    <!-- <span class="card__status">0-22</span> -->
+                                </div>
+                            </div>
+                            <p class="card__description">7</p>
+                        </div>
+                    </a>      
+                </li>
+            </ul>
+            <ul class="cards">
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_08_justica.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/8 JUSTIÇA.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">JUSTIÇA</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">8</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_09_ermitao.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/9 EREMITA.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">EREMITA</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">9</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_10_roda_fortuna.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/10 RODA DA FORTUNA.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">RODA DA FORTUNA</h3>            
+                                </div>
+                            </div>
+                            <p class="card__description">10</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="http://www.clubedotaro.com.br/site/m32_11_forca.asp" target="_blank" class="card">
+                        <img src="{{ url_for('static', filename='img/tarot/11 FORÇA.jpg') }}" class="card__image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">FORÇA</h3>            
+                                    <!-- <span class="card__status">0-22</span> -->
+                                </div>
+                            </div>
+                            <p class="card__description">11</p>
+                        </div>
+                    </a>      
+                </li>
+            </ul>
+            <ul class="cards">
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_12_pendurado.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/12 PENDURADO.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">PENDURADO</h3>            
+                            </div>
+                        </div>
+                        <p class="card__description">12</p>
+                    </div>
+                </a>      
+            </li>
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_13_sem_nome.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/13 MORTE.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">MORTE</h3>            
+                            </div>
+                        </div>
+                        <p class="card__description">13</p>
+                    </div>
+                </a>      
+            </li>
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_14_temperanca.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/14 TEMPERANÇA.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">TEMPERANÇA</h3>            
+                            </div>
+                        </div>
+                        <p class="card__description">14</p>
+                    </div>
+                </a>      
+            </li>
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_15_diabo.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/15 DIABO.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">DIABO</h3>            
+                                <!-- <span class="card__status">0-22</span> -->
+                            </div>
+                        </div>
+                        <p class="card__description">15</p>
+                    </div>
+                </a>      
+            </li>
+        </ul>
+        <ul class="cards">
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_16_torre.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/16 TORRE.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">TORRE</h3>            
+                            </div>
+                        </div>
+                        <p class="card__description">16</p>
+                    </div>
+                </a>      
+            </li>
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_17_estrela.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/17 ESTRELA.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">ESTRELA</h3>            
+                            </div>
+                        </div>
+                        <p class="card__description">17</p>
+                    </div>
+                </a>      
+            </li>
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_18_lua.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/18 LUA.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">LUA</h3>            
+                            </div>
+                        </div>
+                        <p class="card__description">18</p>
+                    </div>
+                </a>      
+            </li>
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_19_solasp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/19 SOL.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">SOL</h3>            
+                                <!-- <span class="card__status">0-22</span> -->
+                            </div>
+                        </div>
+                        <p class="card__description">19</p>
+                    </div>
+                </a>      
+            </li>
+        </ul>
+        <ul class="cards">
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_20_julgamento.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/20 JULGAMENTO.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">JULGAMENTO</h3>            
+                            </div>
+                        </div>
+                        <p class="card__description">20</p>
+                    </div>
+                </a>      
+            </li>
+            <li>
+                <a href="http://www.clubedotaro.com.br/site/m32_21_mundo.asp" target="_blank" class="card">
+                    <img src="{{ url_for('static', filename='img/tarot/21 MUNDO.jpg') }}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <div class="card__header-text">
+                                <h3 class="card__title">MUNDO</h3>            
+                            </div>
+                        </div>
+                        <p class="card__description">21</p>
+                    </div>
+                </a>      
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+            <!-- <div class="row align-items-center" data-aos="zoom-in-up">
                 <div class="col" style="padding-top: 35px;margin-top: 0px;">
                     <div class="text-center getting-started-info">
                         <h2 style="margin-bottom: 20px;">Clique nas cartas para conhece-las.</h2>
@@ -295,7 +600,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </main>
