@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title> {% block title %}Caminho de Qael{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/fontawesome5-overrides.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c ss">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+SC">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex+Brush">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aref+Ruqaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Data-Table-1.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Data-Table.css') }}">
@@ -26,6 +29,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/vertical-tabs-with-links-and-contents.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Lightbox-Gallery.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Off-Canvas-Sidebar-Drawer-Navbar.css')}}">
     <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/Filterable-Gallery-with-Lightbox.css')}}"> -->
     <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/Filterable-Gallery.css')}}"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
@@ -40,7 +44,8 @@
 
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding-top:5px;padding-bottom:5px;background-image:url({{ url_for('static', filename='img/barra.png') }});background-size:cover;background-position:left;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding-top:5px;padding-bottom:5px;background: linear-gradient(90deg, rgb(97,46,158) 0%, rgb(89,54,171));">
+    <!-- <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding-top:5px;padding-bottom:5px;background-image:url({{ url_for('static', filename='img/barra.png') }});background-size:cover;background-position:left;"> -->
         <div class="container">
             <a href="/" class="navbar-brand logo" style="  width: 50px; height: 65px;">
                 <i class="fa" style="color:rgba(0,0,0,0);background-image:url({{ url_for('static', filename='img/qq.png') }});background-color:rgba(174,67,67,0);background-size:cover;width:50px;height:50px;margin:0;margin-bottom:0;">
@@ -85,7 +90,7 @@
                         </div>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="/artigos" style="color: #EDD20E;">Artigos</a>
+                        <a class="nav-link" href="/artigos/deus" style="color: #EDD20E;">Artigos</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" href="/sobre_nos" style="color: #EDD20E;">Sobre nós</a>
@@ -110,7 +115,7 @@
                 </div>
                 <div class="col">
                     <p>Qæl © 2019</p>
-                </div>                
+                </div>
             </div>
         </div>
     </footer>
@@ -120,6 +125,8 @@
     <script src="{{ url_for('static', filename='js/smoothproducts.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bs-animation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Off-Canvas-Sidebar-Drawer-Navbar-1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Off-Canvas-Sidebar-Drawer-Navbar.js') }}"></script>
     <!-- <script src="{{ url_for('static', filename='js/Filterable-Gallery-with-Lightbox.js') }}"></script> -->
     <!-- <script src="{{ url_for('static', filename='js/Filterable-Gallery.js') }}"></script> -->
     <script src="{{ url_for('static', filename='js/jquery.mask.js') }}"></script>

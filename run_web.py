@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("index.html") 
+    return render_template("index.html")
 
 @app.route('/numerologia', methods=['POST', 'GET'])
 def numerologia():
@@ -97,9 +97,13 @@ def wallpapers():
 def wallpapers_cel():
     return render_template('wallpaper-cel.html')
 
-@app.route('/artigos', methods=['POST', 'GET'])
-def artigos():
-    return render_template('artigos.html')
+@app.route('/artigos/deus', methods=['POST', 'GET'])
+def artigos_deus():
+    return render_template('artigos-deus.html')
+
+@app.route('/artigos/yashoa', methods=['POST', 'GET'])
+def artigos_yashoa():
+    return render_template('artigos-yashoa.html')
 
 @app.route('/totem', methods=['POST', 'GET'])
 def totem():
