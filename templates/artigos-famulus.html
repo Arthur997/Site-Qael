@@ -1,0 +1,83 @@
+﻿{% extends "base.html" %}
+<title> {% block title %}Famulus{% endblock %}</title>
+{% block content %}
+
+<main class="page landing-page">
+    <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14); margin-top: -55px">
+        <div class="container" id="atigos">
+            <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
+                <h1 style="font-weight: normal;font-style: normal;font-size: 40px;">Artigos</h1>
+                <!-- <img class="img-thumbnail img-fluid" src="{{ url_for('static', filename='img/maos.jpg') }}" style="background-size: auto;height: 300px;width: 540px;"> -->
+            </div>
+            <div class="row" data-aos="zoom-in-up">
+                <div class="row" data-aos="zoom-in-up">
+                    <h3>Famulus - A construção da família I </h3>
+                    <p class="text-left">'<a target="_blank" href="https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/a-etimologia-dosubstantivo-familia/32950
+                        ">O termo famulus</a> (Latim), designava o escravo que servia em casa, sob a
+                        autoridade de um patriarca. Ao conjunto de escravos que serviam sob o
+                        mesmo teto chamava‑se familia. Era preciso mais do que um famulus para
+                        se constituir uma familia. Julius Paulus Prudentissimus (séc. III d. C.) dizia
+                        (V, 6, 39) que familiæ nomine etiam duo servi continentur (com dois
+                        escravos já se constitui o que se chama uma familia)’.        
+                    </p>
+                </div>
+                <div class="row" data-aos="zoom-in-up">
+                    <p class="text-left">Infelizmente muitas famílias ainda agem como os antigos romanos, criando
+                        um ambiente dentro do lar que mais parece escravidão, onde os membros da casa são
+                        vistos como propriedades, onde as situações delicadas são resolvidas com açoites. No
+                        grupo que mais deveríamos ser amados e compreendidos, somos rejeitados e
+                        machucados. É uma realidade triste e dolorida, bem conhecida por todos nós e por isso
+                        dispensa maiores detalhes.
+                    </p>
+                    <p class="text-left">Usamos o termo Grupo Familiar quando a realidade da casa em que nascemos
+                        é a de Famulus, quando percebemos que não há paz, amor e amizade onde vivemos.
+                        Ambiente de incompreensão entre todos os membros do lugar. Todos lutando pela razão,
+                        ninguém está errado, o outro sempre não me entende. Usamos esse termo para separar o
+                        real do ideal, pois, ao menos no campo das ideias a palavra família simboliza hoje em dia
+                        um grupo, e não lugar, onde existe amor
+                    </p>
+                </div>
+                <div class="row" data-aos="zoom-in-up">
+                    <p class="text-left">Grupo Familiar é a junção das pessoas que nasceram ligadas por dívidas
+                        cármicas e/ou por afinidades positivas ou negativas. Nele aprendemos a transformar o
+                        nosso caráter, deixando de ser egoístas e egocêntricos. Alguns aprendem rápido as lições
+                        e passam por poucos grupos familiares ao longo de suas encarnações, enquanto outros
+                        precisam passar por inúmeros grupos familiares para aprender o verdadeiro significado
+                        de amor familiar.                        
+                    </p>
+                    <p class="text-left">Entendemos que o termo família para nós, filhos de Qæl, significa o término
+                        de uma construção iniciada há muitas encarnações. Depois de muito sofrer e criar
+                        sofrimento na vida de outros, estamos prontos para reconhecer que meu filho, minha
+                        esposa, meu marido não são meus escravos, não são minhas propriedades. Prontos para
+                        reconhecer nossos próprios defeitos e responsabilidades não cumpridas. Nesse momento
+                        importante de nossa jornada precisamos completar a construção de nossa família.
+                    </p>
+                    <p class="text-left">Tenho a felicidade de ver construções finalizadas de famílias, pais e filhos
+                        vivendo seus verdadeiros papeis. Pais presentes e amorosos com seus filhos, irmãos com
+                        amizade verdadeira, casais que se amam e se respeitam. Sou grato em percorrer um
+                        caminho que prioriza a felicidade cotidiana a dogmas e experiências místicas no astral,
+                        trabalhando assim a consciência da responsabilidade pessoal da convivência. Termine o
+                        seu aprendizado, termine a construção de sua família.                        
+                    </p>
+                    <div class="col align-items-right">
+                        <p style="text-align: right;">Yá Ben</p>
+                    </div> 
+                </div>
+                <br>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark fixed-top bg-secondary off-canvas" data-right-drawer="0" data-open-drawer="0" style="margin-top: 75px;background: linear-gradient(90deg, rgb(97,46,158) 0%, rgb(89,54,171));border-bottom-right-radius: 39px;">
+            <div class="container-fluid flex-column"><button class="btn drawer-knob" type="button" data-open="drawer" style="background: rgb(211,172,42);"><i class="fas fa-bars"></i></button>
+                <div class="d-flex justify-content-between brand-line"><a class="navbar-brand" href="#">Artigos</a><button class="btn" type="button" data-dismiss="drawer" style="background: rgb(211,172,42);"><span class="sr-only">Toggle Navigation </span><i class="fas fa-times mx-auto"></i></button></div>
+                <ul class="nav navbar-nav flex-column drawer-menu">
+                    <li class="nav-item"><a class="nav-link active" href="/artigos/deus">Deus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/artigos/yashoa">Yashoa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/artigos/famulus">Famulus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sobre_nos">Os Filhos de Qæl</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+</main>
+
+{% endblock %}

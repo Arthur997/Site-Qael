@@ -1,13 +1,102 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from NumerologiaNome import NumNomeComum, NumNomeBatismo
 from NumerologiaAniversario import NumData
 from tarot import Arcano
+import os
+# from flask_sqlalchemy import SQLAlchemy
+# import bcrypt
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return render_template("index.html")
+
+# # URL format for PostgreSQL: 'postgresql://username:password@host:port/database'
+# # This should be updated with the appropriate values for your PostgreSQL server
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://username:password@host:port/database'
+
+# db = SQLAlchemy(app)
+
+# class User(db.Model):
+#     id = db.Column(db.Integer, primary_key=True)
+#     username = db.Column(db.String(80), unique=True, nullable=False)
+#     password_hash = db.Column(db.String(120), nullable=False)
+#     email = db.Column(db.String(120), unique=True, nullable=False)
+#     phone_number = db.Column(db.String(20), unique=True, nullable=False)
+#     full_name = db.Column(db.String(120), nullable=False)
+#     birth_date = db.Column(db.Date, nullable=False)
+
+#     def __repr__(self):
+#         return '<User %r>' % self.username
+
+# @app.route('/', methods=['GET', 'POST'])
+# def login():
+#     if request.method == 'POST':
+#         username = request.form['username']
+#         password = request.form['password']
+
+#         # Check if the user exists
+#         user = User.query.filter_by(username=username).first()
+#         if user is None:
+#             return 'Invalid username'
+
+#         # Check if the password is correct
+#         if bcrypt.checkpw(password.encode('utf-8'), user.password_hash.encode('utf-8')):
+#             # Login successful
+#             return 'Login successful'
+#         else:
+#             return 'Invalid password'
+#     else:
+#         return '''
+#             <form method="post">
+#                 <input type="text" name="username" placeholder="Username">
+#                 <input type="password" name="password" placeholder="Password">
+#                 <input type="submit" value="Login">
+#             </form>
+#             <form method="post" action="register">
+#                 <input type="text" name="username" placeholder="Username">
+#                 <input type="password" name="password" placeholder="Password">
+#                 <input type="email" name="email" placeholder="Email">
+#                 <input type="text" name="phone_number" placeholder="Phone number">
+#                 <input type="text" name="full_name" placeholder="Full name">
+#                 <input type="date" name="birth_date" placeholder="Birth date">
+#                 <input type="submit" value="Create">
+#             </form>
+#         '''
+
+# @app.route('/register', methods=['POST'])
+# def register():
+#     if request.method == 'POST':
+#         username = request.form['username']
+#         password = request.form['password']
+#         email = request.form['email']
+#         phone_number = request.form['phone_number']
+#         full_name = request.form['full_name']
+#         birth_date = request.form['birth_date']
+
+#         # Hash the password
+#         password_hash = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        
+#         # Create a new user
+#         user = User(username=username, password_hash=password, email=email, phone_number=phone_number, full_name=full_name, birth_date=birth_date)
+#         db.session.add(user)
+#         db.session.commit()
+        
+#         return 'User created'
+#     else:
+#         return '''
+#             <form method="post">
+#                 <input type="text" name="username" placeholder="Username">
+#                 <input type="password" name="password" placeholder="Password">
+#                 <input type="email" name="email" placeholder="Email">
+#                 <input type="text" name="phone_number" placeholder="Phone number">
+#                 <input type="text" name="full_name" placeholder="Full name">
+#                 <input type="date" name="birth_date" placeholder="Birth date">
+#                 <input type="submit" value="Create">
+#             </form>
+#         '''
+
 
 @app.route('/numerologia', methods=['POST', 'GET'])
 def numerologia():
@@ -100,6 +189,10 @@ def wallpapers_cel():
 @app.route('/artigos/deus', methods=['POST', 'GET'])
 def artigos_deus():
     return render_template('artigos-deus.html')
+
+@app.route('/artigos/famulus', methods=['POST', 'GET'])
+def artigos_famulus():
+    return render_template('artigos-famulus.html')
 
 @app.route('/artigos/yashoa', methods=['POST', 'GET'])
 def artigos_yashoa():
