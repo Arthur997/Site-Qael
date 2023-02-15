@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def index():
     return render_template("index.html")
 
@@ -97,7 +97,6 @@ def index():
 #             </form>
 #         '''
 
-
 @app.route('/numerologia', methods=['POST', 'GET'])
 def numerologia():
 
@@ -166,37 +165,54 @@ def arcanoNome():
 
     return render_template("arcano.html")
 
-@app.route('/sobre_nos')
-def sobre_nos():
-    return render_template('sobre_nos.html')
-
-@app.route('/temperamentos')
-def temperamentos():
-    return render_template('temperamentos.html')
-
-@app.route('/tarot')
-def tarot():
-    return render_template('tarot.html')
-
-@app.route('/wallpapers')
-def wallpapers():
-    return render_template('wallpapers.html')
-
-@app.route('/wallpapers-cel')
-def wallpapers_cel():
-    return render_template('wallpaper-cel.html')
+def get_links_artigos():
+    caminho =   {"Deus": "/artigos/deus", 
+                "Yahoa": "/artigos/yashoa",
+                "Famulus": "/artigos/famulus",
+                "Os Filhos de Qæl": "/sobre_nos"}
+    
+    nome_pag = ["Deus",
+                "Yahoa",
+                "Famulus",
+                "Os Filhos de Qæl"] 
+    
+    return caminho
 
 @app.route('/artigos/deus', methods=['POST', 'GET'])
 def artigos_deus():
-    return render_template('artigos-deus.html')
+    caminho = get_links_artigos()
+    return render_template('artigos-deus.html', caminho = caminho)
 
 @app.route('/artigos/famulus', methods=['POST', 'GET'])
 def artigos_famulus():
-    return render_template('artigos-famulus.html')
+    caminho = get_links_artigos()    
+    return render_template('artigos-famulus.html', caminho = caminho)
 
 @app.route('/artigos/yashoa', methods=['POST', 'GET'])
 def artigos_yashoa():
-    return render_template('artigos-yashoa.html')
+    caminho = get_links_artigos() 
+    return render_template('artigos-yashoa.html', caminho = caminho)
+
+@app.route('/sobre_nos', methods=['POST', 'GET'])
+def sobre_nos():
+    caminho = get_links_artigos() 
+    return render_template('sobre_nos.html', caminho = caminho)
+
+@app.route('/temperamentos', methods=['POST', 'GET'])
+def temperamentos():
+    return render_template('temperamentos.html')
+
+@app.route('/tarot', methods=['POST', 'GET'])
+def tarot():
+    return render_template('tarot.html')
+
+@app.route('/wallpapers', methods=['POST', 'GET'])
+def wallpapers():
+    return render_template('wallpapers.html')
+
+@app.route('/wallpapers-cel', methods=['POST', 'GET'])
+def wallpapers_cel():
+    return render_template('wallpaper-cel.html')
 
 @app.route('/totem', methods=['POST', 'GET'])
 def totem():
@@ -230,9 +246,17 @@ def totem_cavalo():
 def totem_cervo():
     return render_template('totens/totem_cervo.html')
 
+@app.route('/totem_chimpanze', methods=['POST', 'GET'])
+def totem_chimpanze():
+    return render_template('totens/totem_chimpanze.html')
+
 @app.route('/totem_cordeiro', methods=['POST', 'GET'])
 def totem_cordeiro():
     return render_template('totens/totem_cordeiro.html')
+
+@app.route('/totem_coelho', methods=['POST', 'GET'])
+def totem_coelho():
+    return render_template('totens/totem_coelho.html')
 
 @app.route('/totem_coruja', methods=['POST', 'GET'])
 def totem_coruja():

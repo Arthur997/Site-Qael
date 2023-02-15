@@ -1,42 +1,50 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Primary Meta Tags -->
+    <meta charset=UTF-8>
     <title> {% block title %}Caminho de Qael{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/fontawesome-all.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/fontawesome5-overrides.min.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c ss">
+    <meta name="title" content="{% block title_meta %}Caminho de Qael{% endblock %}">
+    <meta name="description" content="{% block description %} Qæl não é uma religião, e sim um caminho espiritual que visa o despertar e
+    iluminação do individuo. Sem um livro sagrado ou doutrinas, não existem verdades
+    absolutas, tudo é mutavel e questionavel o que a descaracteriza como uma religião.
+    Seu objetivo é guiar as pessoas em um caminho espiritual a fim de se
+    conhecer, se superar e alcançar a tão sonhada elevação{% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="espiritual, qael, numerologia, comunidade, tarot, mistico, religião, caminho, temperamentos,
+    animais de poder, totem, totens, elevação, {% block keyword %}artigos {% endblock %}">
+    <meta name="author" content="Arthur Frota">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Data-Table-1.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Data-Table.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/smoothproducts.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/text-box.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/vertical-tabs-with-links-and-contents.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Lightbox-Gallery.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Off-Canvas-Sidebar-Drawer-Navbar.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Basic-fancyBox-Gallery-v2.css')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/icon/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/icon/favicon-16x16.png')}}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/text-box.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/paralax.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Off-Canvas-Sidebar-Drawer-Navbar.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fundo_animado.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Data-Table.css')}}">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <link rel="icon" type="ico" href="/favicon.ico"> 
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding-top:5px;padding-bottom:5px;background: linear-gradient(90deg, rgb(97,46,158) 0%, rgb(89,54,171));">
         <div class="container">
             <a href="/" class="navbar-brand logo" style="  width: 50px; height: 65px;">
-                <i class="fa" style="color:rgba(0,0,0,0);background-image:url({{ url_for('static', filename='img/qq.png') }});background-color:rgba(174,67,67,0);background-size:cover;width:50px;height:50px;margin:0;margin-bottom:0;">
+                <i class="fa" style="color:rgba(0,0,0,0);background-image:url({{ url_for('static', filename='img/logo_menor.png') }});background-color:rgba(174,67,67,0);background-size:cover;width:60px;height:60px;margin:0;margin-bottom:0;">
                 </i>
-            </a><button data-toggle="collapse" data-target="#navcol-1"
+            </a>
+            <button data-toggle="collapse" data-target="#navcol-1"
                         class="navbar-toggler">
                 <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
             </button>
@@ -44,16 +52,26 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="/" style="color: #EDD20E;">Home</a>
+                        <a class="nav-link" href="/" style="color: gold;">Home</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="/numerologia" style="color: #EDD20E;">Numerologia</a>
+                        <a class="nav-link" href="/numerologia" style="color: gold;">Numerologia</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="/temperamentos" style="color: #EDD20E;">Temperamentos</a>
+                    <!-- <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="/temperamentos" style="color: gold;">Temperamentos</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/temperamentos" style="color: gold;">Temperamentos</a>
+                        <div class="dropdown-menu" role="menu" style="background-color: #eee5f3;">
+                            <a class="dropdown-item" role="presentation" href="/temperamentos">O que é?</a>
+                            <a class="dropdown-item" role="presentation" href="/temperamentos#colerico">Colerico</a>
+                            <a class="dropdown-item" role="presentation" href="/temperamentos#fleumatico">Fleumático</a>
+                            <a class="dropdown-item" role="presentation" href="/temperamentos#melancolico">Melancólico</a>
+                            <a class="dropdown-item" role="presentation" href="/temperamentos#sanguineo">Sanguineo</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/tarot" style="color: #EDD20E;">Tarô</a>
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/tarot" style="color: gold;">Tarô</a>
                         <div class="dropdown-menu" role="menu" style="background-color: #eee5f3;">
                             <a class="dropdown-item" role="presentation" href="/tarot">O que é?</a>
                             <a class="dropdown-item" role="presentation" href="/arcano">Faça seu arcano pessoal</a>
@@ -61,22 +79,22 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/totem" style="color: #EDD20E;">Totem</a>
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/totem" style="color: gold;">Totem</a>
                         <div class="dropdown-menu" role="menu" style="background-color: #eee5f3;">
                             <a class="dropdown-item" role="presentation" href="/totem">O que é?</a>
                             <a class="dropdown-item" role="presentation" href="/totem#os_totens">Quais são?</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/downloads" style="color: #EDD20E;">Downloads</a>
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/downloads" style="color: gold;">Downloads</a>
                         <div class="dropdown-menu" role="menu" style="background-color: #eee5f3;">
                             <a class="dropdown-item" role="presentation" href="/downloads">Livros/Músicas</a>
                             <a class="dropdown-item" role="presentation" href="/wallpapers">Wallpapers para computador</a>
-                            <a class="dropdown-item" role="presentation" href="/wallpapers-cel">Wallpapers pelular</a>
+                            <a class="dropdown-item" role="presentation" href="/wallpapers-cel">Wallpapers celular</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/artigos" style="color: #EDD20E;">Artigos</a>
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/artigos" style="color: gold;">Artigos</a>
                         <div class="dropdown-menu" role="menu" style="background-color: #eee5f3;">
                             <a class="dropdown-item" role="presentation" href="/artigos/deus">Deus</a>
                             <a class="dropdown-item" role="presentation" href="/artigos/famulus">Famulus</a>
@@ -85,10 +103,10 @@
                         </div>
                     </li>
                     <!-- <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="/artigos/deus" style="color: #EDD20E;">Artigos</a>
+                        <a class="nav-link" href="/artigos/deus" style="color: gold;">Artigos</a>
                     </li> -->
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="/sobre_nos" style="color: #EDD20E;">Sobre nós</a>
+                        <a class="nav-link" href="/sobre_nos" style="color: gold;">Sobre nós</a>
                     </li>
                     <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="/contato" style="color: rgb(216,181,17);filter: blur(0px) contrast(NaN%);">Contato</a></li> -->
                 </ul>
@@ -115,22 +133,11 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="{{ url_for('static', filename='js/smoothproducts.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bs-animation.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url_for('static', filename='js/Off-Canvas-Sidebar-Drawer-Navbar-1.js') }}"></script>
     <script src="{{ url_for('static', filename='js/Off-Canvas-Sidebar-Drawer-Navbar.js') }}"></script>
-    <!-- <script src="{{ url_for('static', filename='js/Filterable-Gallery-with-Lightbox.js') }}"></script> -->
-    <!-- <script src="{{ url_for('static', filename='js/Filterable-Gallery.js') }}"></script> -->
-    <script src="{{ url_for('static', filename='js/jquery.mask.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/jquery.mask.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
 

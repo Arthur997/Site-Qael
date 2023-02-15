@@ -1,12 +1,21 @@
-﻿{% extends "base.html" %}
+{% extends "base.html" %}
+
 <title> {% block title %}Tarô - Conheça seu destino com os Arcanos{% endblock %}</title>
+        {% block title_meta %}Tarô - Conheça seu destino com os Arcanos{% endblock %}
+
+{% block description %}Tarot é um jogo de cartas antigo que pode ser ser entendido como uma linguagem
+simbólica que traduz o cosmo em sua estrutura e dinâmica e se mostra profundamente influente na
+sua vida. {% endblock %}
+
+{% block keyword %} arcanos {% endblock %}
+
 {% block content %}
 
 <main class="page registration-page">
     <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14);margin-top: -50px;height: 800px;">
         <div class="container">
             <div class="block" style="padding-top: 50px; max-width:900px; margin: auto;">
-                <h1 class="text-info">Arcano pessoal</h1>
+                <h1>Arcano pessoal</h1>
             <h5>Instruções:</h5>
             <ul>
                 <li>Insira seu nome completo para saber seu arcano pessoal.</li>

@@ -1,13 +1,23 @@
-﻿{% extends "base.html" %}
-<title> {% block title %}Sobre Qael{% endblock %}</title>
+{% extends "base.html" %}
+
+<title> {% block title %}Filhos de Qael{% endblock %}</title>
+        {% block title_meta %}Filhos de Qael{% endblock %}
+
+{% block description %} Ser um Qæilista não é melhor nem pior, superior ou inferior do que ser um
+religioso ou um ateu, um artista ou um filósofo, é apenas um marco nesse Caminho
+infinito em que todas as consciências caminham. Logo, a finalidade de se identificar é
+apenas de orientação, uma identificação necessária dentro desse viver neste mundo.  {% endblock %}
+
+{% block keyword %} Qaelista, filhos, discípulos{% endblock %}
+
 {% block content %}
 
 <main class="page landing-page">
     <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14); margin-top: -55px">
-        <div class="container" id="sobre_nos">
+        <article class="container" id="sobre_nos">
             <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
                 <h1 style="font-weight: normal;font-style: normal;font-size: 40px;">Sobre nós Qælistas</h1>
-                <img class="img-thumbnail img-fluid" src="{{ url_for('static', filename='img/maos.jpg') }}" style="background-size: auto;height: 300px;width: 540px;">
+                <img class="img-thumbnail img-fluid" alt="Imagem contendo as mãos de alguns membros de Qael" src="{{ url_for('static', filename='img/maos.jpg') }}" style="background-size: auto;height: 300px;width: 540px;">
             </div>
             <div class="row" data-aos="zoom-in-up">
                 <div class="row" data-aos="zoom-in-up">
@@ -50,15 +60,14 @@
                 </div>
                 <br>
             </div>
-        </div>
+        </article>
         <nav class="navbar navbar-dark fixed-top bg-secondary off-canvas" data-right-drawer="0" data-open-drawer="0" style="margin-top: 75px;background: linear-gradient(90deg, rgb(97,46,158) 0%, rgb(89,54,171));border-bottom-right-radius: 39px;">
-            <div class="container-fluid flex-column"><button class="btn drawer-knob" type="button" data-open="drawer" style="background: rgb(211,172,42);"><i class="fas fa-bars"></i></button>
-                <div class="d-flex justify-content-between brand-line"><a class="navbar-brand" href="#">Artigos</a><button class="btn" type="button" data-dismiss="drawer" style="background: rgb(211,172,42);"><span class="sr-only">Toggle Navigation </span><i class="fas fa-times mx-auto"></i></button></div>
-                <ul class="nav navbar-nav flex-column drawer-menu">
-                    <li class="nav-item"><a class="nav-link active" href="/artigos/deus">Deus</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/artigos/yashoa">Yashoa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/artigos/famulus">Famulus</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/sobre_nos">Os Filhos de Qæl</a></li>
+            <div class="container-fluid flex-column"><button class="btn drawer-knob" type="button" data-open="drawer" style="background: rgb(211,172,42);"><i> = </i></button>
+                <div class="d-flex justify-content-between brand-line"><a class="navbar-brand" href="#">Artigos</a><button class="btn" type="button" data-dismiss="drawer" style="background: rgb(211,172,42);"><span class="sr-only">Toggle Navigation </span><i"> = </i></button></div>
+            <ul class="nav navbar-nav flex-column drawer-menu">
+                    {% for i in caminho %}
+                    <li class="nav-item"><a class="nav-link" href="{{ caminho[i] }}">{{i}}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </nav>

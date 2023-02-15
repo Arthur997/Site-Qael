@@ -1,17 +1,27 @@
-﻿{% extends "base.html" %}
-<title> {% block title %}Famulus{% endblock %}</title>
+{% extends "base.html" %}
+
+<title> {% block title %}Familia - Artigos de Qael{% endblock %}</title>
+        {% block title_meta %}Familia - Artigos de Qael{% endblock %}
+
+{% block description %} Entendemos que o termo família para nós, filhos de Qæl, significa o término
+de uma construção iniciada há muitas encarnações. Depois de muito sofrer e criar
+sofrimento na vida de outros, estamos prontos para reconhecer que meu filho, minha
+esposa, meu marido não são meus escravos, não são minhas propriedades. {% endblock %}
+
+{% block keyword %} familia, famulus, grupo familiar{% endblock %}
+
 {% block content %}
+
 
 <main class="page landing-page">
     <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14); margin-top: -55px">
-        <div class="container" id="atigos">
+        <article class="container" id="atigos">
             <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
-                <h1 style="font-weight: normal;font-style: normal;font-size: 40px;">Artigos</h1>
-                <!-- <img class="img-thumbnail img-fluid" src="{{ url_for('static', filename='img/maos.jpg') }}" style="background-size: auto;height: 300px;width: 540px;"> -->
+                <h1 style="font-weight: normal;font-style: normal;font-size: 40px;">Famulus</h1>
             </div>
             <div class="row" data-aos="zoom-in-up">
                 <div class="row" data-aos="zoom-in-up">
-                    <h3>Famulus - A construção da família I </h3>
+                    <h3>A construção da família I </h3>
                     <p class="text-left">'<a target="_blank" href="https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/a-etimologia-dosubstantivo-familia/32950
                         ">O termo famulus</a> (Latim), designava o escravo que servia em casa, sob a
                         autoridade de um patriarca. Ao conjunto de escravos que serviam sob o
@@ -65,15 +75,14 @@
                 </div>
                 <br>
             </div>
-        </div>
+        </article>
         <nav class="navbar navbar-dark fixed-top bg-secondary off-canvas" data-right-drawer="0" data-open-drawer="0" style="margin-top: 75px;background: linear-gradient(90deg, rgb(97,46,158) 0%, rgb(89,54,171));border-bottom-right-radius: 39px;">
-            <div class="container-fluid flex-column"><button class="btn drawer-knob" type="button" data-open="drawer" style="background: rgb(211,172,42);"><i class="fas fa-bars"></i></button>
-                <div class="d-flex justify-content-between brand-line"><a class="navbar-brand" href="#">Artigos</a><button class="btn" type="button" data-dismiss="drawer" style="background: rgb(211,172,42);"><span class="sr-only">Toggle Navigation </span><i class="fas fa-times mx-auto"></i></button></div>
-                <ul class="nav navbar-nav flex-column drawer-menu">
-                    <li class="nav-item"><a class="nav-link active" href="/artigos/deus">Deus</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/artigos/yashoa">Yashoa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/artigos/famulus">Famulus</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/sobre_nos">Os Filhos de Qæl</a></li>
+            <div class="container-fluid flex-column"><button class="btn drawer-knob" type="button" data-open="drawer" style="background: rgb(211,172,42);"><i> = </i></button>
+                <div class="d-flex justify-content-between brand-line"><a class="navbar-brand" href="#">Artigos</a><button class="btn" type="button" data-dismiss="drawer" style="background: rgb(211,172,42);"><span class="sr-only">Toggle Navigation </span><i"> = </i></button></div>
+            <ul class="nav navbar-nav flex-column drawer-menu">
+                    {% for i in caminho %}
+                    <li class="nav-item"><a class="nav-link" href="{{ caminho[i] }}">{{i}}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </nav>

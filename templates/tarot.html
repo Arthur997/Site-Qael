@@ -1,13 +1,22 @@
-﻿{% extends "base.html" %}
-<title> {% block title %}O que é tarô?{% endblock %}</title>
+{% extends "base.html" %}
+
+<title> {% block title %}Tarô - Conheça seu destino com os Arcanos{% endblock %}</title>
+        {% block title_meta %}Tarô - Conheça seu destino com os Arcanos{% endblock %}
+
+{% block description %}Tarot é um jogo de cartas antigo que pode ser ser entendido como uma linguagem
+simbólica que traduz o cosmo em sua estrutura e dinâmica e se mostra profundamente influente na
+sua vida. {% endblock %}
+
+{% block keyword %} arcanos {% endblock %}
+
 {% block content %}
 
 <main class="page landing-page">
     <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14);margin-top: -60px;">
-        <div class="container" id="taro">
+        <article class="container" id="taro">
             <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
                 <h1 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;font-size: 54px;">Tarô</h1>
-                <img class="img-fluid" src="{{ url_for('static', filename='img/tarot/cartas-de-tarot-para-2020.jpg') }}" style="width: 558px;">
+                <img class="img-fluid" alt="Imagem com fundo roxo e 3 cartas de tarô, o magico, o sol, e a imperatriz." src="{{ url_for('static', filename='img/tarot.jpg') }}" style="width: 558px;">
             </div>
             <div class="row align-items-center visible" data-aos="zoom-in-up">
                 <div class="col" style="padding-top: 35px;">
@@ -44,8 +53,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="border rounded-0 d-sm-flex clean-block add-on call-to-action blue" style="background-image: url(&quot;{{ url_for('static', filename='img/barra.png')}}&quot;);background-position: top;background-size:cover;background-repeat: no-repeat;height: 113px;">
+        </article>
+        <div class="border rounded-0 d-sm-flex clean-block add-on call-to-action blue" style="background: linear-gradient(90deg, rgb(97,46,158) 0%, rgb(89,54,171));background-position: top;background-size:cover;background-repeat: no-repeat;height: 113px;">
             <a class="btn btn-outline-light text-uppercase text-center" role="button" href="/arcano" style="height: 35px;background-color: rgba(255,255,255,0.08);">DESCUBRA SEU ARCANO PESSOAL</a>
         </div>
         <div class="container" id="cartas">

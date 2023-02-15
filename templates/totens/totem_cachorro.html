@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+<title> {% block title %}Totem cachorro - Qael{% endblock %}</title>
 {% block content %}
 
     <main class="page landing-page">
         <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14);margin-top: -30px;">
-            <div class="container">
+            <article class="container">
                 <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
                     <h1 class="display-4 text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;"><strong>Cachorro</strong></h1>
                     <h4 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;">Lealdade</h4><img class="img-fluid" src="{{ url_for('static', filename='img/614031.jpg')}}" style="width: 558px;"></div>
@@ -19,7 +20,7 @@
                                 por um espírito baixo, logo ele se vê no totem, com dentes caninos grandes e rosnando contra seu oponente, percebe então a importância de proteger espiritualmente seu filho.<br><br></p>
                         </div><a class="btn btn-outline-light btn-lg d-lg-flex justify-content-lg-center" role="button" href="/totem" style="background-position: center;background-color: rgba(80,38,130,0.94);color: rgb(255,255,255);width: 93px;">Voltar</a></div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
 

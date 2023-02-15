@@ -1,4 +1,48 @@
-#example {
-  margin-bottom: 0;
+.table-round-corner {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  overflow:hidden;
+  border-collapse:separate;
+  border: solid #ccc 1px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
 
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 16px;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead tr {
+  background-color: rgb(97,46,158) ;
+  color: #ffffff;
+  text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(97,46,158) ;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color:rgb(120, 70, 182) ;
+}

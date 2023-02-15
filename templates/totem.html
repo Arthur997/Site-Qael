@@ -1,12 +1,24 @@
 {% extends "base.html" %}
-<title> {% block title %}O que são totens ou animais de poder?{% endblock %}</title>
+
+<title> {% block title %}Totens, os animais de poder de Qael{% endblock %}</title>
+        {% block title_meta %}Totens, os animais de poder de Qael{% endblock %}
+
+{% block description %}O Animal de Poder é um arquétipo, ou manifestação simbólica, manifestação de Forças
+Interiores que atua como Guia ou Mentor, uma energia, uma forma que representa nossa
+personalidade ou comportamento (Espírito Animal
+/ Totem). Eles aparecem para chancelar o que você está vivendo no momento, ou para alertarsobre
+a mudança necessária que devemos realizar em nossas vidas.{% endblock %}
+
+{% block keyword %} espirito animal, animal de poder, cachorro, gato, lobo, elefante, cervo, coruja, leão, serpente, tigre {% endblock %}
+
 {% block content %}
 
     <main class="page">
         <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14);margin-top: -20px;">
-            <div class="container text-center">
+            <article class="container text-center">
                 <div>
-                    <h1 class="display-4" style="padding-top: 0px;"><br><strong>Totens</strong></h1><img src="{{ url_for('static', filename= "img/animais-sagrados.jpg") }}" style="width: 464px;">
+                    <h1 class="display-4" style="padding-top: 0px;"><br><strong>Totens</strong></h1>
+                    <img alt="Imagem com alguns animais de poder, são eles o tigre, coruja, elefante, lobo e a serpente." src="{{ url_for('static', filename= "img/totens.jpg") }}" style="width: 464px;">
                     <p class="text-left" data-aos="zoom-in-up" style="opacity: 1;"><br>&nbsp; &nbsp; O que é? E quando surgiu? A sociedade moderna possui? Esse é um assunto que se tornou muito relevante para o caminho Qæl.&nbsp;Vamos compreender um pouco o totemismo de forma geral e então entender o que isso significa
                         para nós, filhos de Qæl.<br>&nbsp;<br>&nbsp; &nbsp; O totem é uma construção simbólica muito antiga de diversas culturas em diversos lugares. As primeiras civilizações já possuíam o totemismo em suas crenças, alguns nativos brasileiros
                         que antecederam a invasão portuguesa possuíam totens. A Ayahuasca, como exemplo, há tempos é vista mais do que uma mera planta, e sim como um instrumento divino, uma bebida santa recebida de entidades superiores. Há relatos de
@@ -40,7 +52,7 @@
                             sabia que era ela, mas se eu me baseasse somente em sua aparência jamais a reconheceria.&nbsp;<br>&nbsp; &nbsp;&nbsp;<br>&nbsp;- Espíritos e demônios também possuem totens.<br><br>&nbsp;- Pode acontecer de você ter um totem,
                             mas ser ajudado por outro em alguma circunstância específica.<br><br></p>
                 </div>
-            </div>
+            </article>
             <div class="container" id="os_totens">
                 <h1 data-aos="zoom-in-up" ><br>Clique no totem para saber mias sobre ele:&nbsp;<br><br></h1>
                 <div class="row">
@@ -78,5 +90,5 @@
             </div>
         </section>
     </main>
-  
+
 {% endblock %}

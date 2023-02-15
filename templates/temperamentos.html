@@ -1,12 +1,22 @@
-﻿{% extends "base.html" %}
-<title> {% block title %}Temperamentos da personalidade humana.{% endblock %}</title>
+{% extends "base.html" %}
+
+<title> {% block title %}Temperamentos da Personalidade Humana{% endblock %}</title>
+        {% block title_meta %}Temperamentos da Personalidade Humana{% endblock %}
+
+{% block description %}O filósofo grego Hipócrates, pai da medicina, formulou a teoria dos temperamentos 
+da personalidade humana separando-os em quatro: Colérico, Fleumático, Nervoso (mais tarde renominado como Melancólico) 
+e Sanguíneo. Associou cada um deles com partes do organismo humano, bilis amarela, fleuma, sangue, e bílis negra. {% endblock %}
+
+{% block keyword %} personalidade, humor, colerico, fleumatico, sanguineo, melancolico, melancolia {% endblock %}
+
 {% block content %}
 
 <main class="page landing-page">
     <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14); margin-top: -55px">
-        <div class="container" id="temperamentos">
+        <article class="container" id="temperamentos">
             <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
-                <h1 style="font-weight: normal;font-style: normal;font-size: 40px;">Temperamentos da Personalidade Humana</h1><br><img class="img-thumbnail img-fluid" src="{{ url_for('static', filename='img/personalidad-1.jpg') }}" style="background-size: auto;height: 300px;width: 540px;margin-top: 20px;">
+                <h1 style="font-weight: normal;font-style: normal;font-size: 40px;">Temperamentos da Personalidade Humana</h1><br>
+                <img class="img-thumbnail img-fluid" alt="Imagem com varios desenhos de rostos com personalidades diferentes nos tons roxo e azul" src="{{ url_for('static', filename='img/temperamentos.jpg') }}" style="background-size: auto;height: 300px;width: 540px;margin-top: 20px;">
 
                 <p style="font-size: 15px">
                     <em>
@@ -17,61 +27,51 @@
             </div>
             <div class="row" data-aos="zoom-in-up">
 
-                <div class="row" data-aos="zoom-in-up">
+                <div class="row" id="o_que_e" data-aos="zoom-in-up">
                     <h2>O que é temperamento?</h2><br>
                     <p class="text-left">O filósofo grego Hipócrates, pai da medicina, formulou a teoria dos temperamentos da personalidade humana separando-os em quatro: Colérico, Fleumático, Nervoso (mais tarde renominado como Melancólico) e Sanguíneo. Associou cada um deles com partes do organismo humano, bilis amarela, fleuma, sangue, e bílis negra.</p>
-
                     <p class="text-left">Nesse estudo não faremos tal associação com as partes do corpo humano, entendemos que as características do temperamento são herdadas geneticamente, não somente pelos pais, mas também avós. A genética era até então, uma ciência desconhecida pelo pai da medicina, logo, somente em nosso tempo podemos compreender claramente os fatores hereditários que ditam nosso comportamento.</p>
-
                     <p class="text-left">Esse estudo que propomos é um instrumento de autoidentificação, um norteador, um marco no caminho do autoconhecimento. Ajuda-nos a uma melhor compreensão de nós mesmos, mas, não serve para dizer quem somos. Somente a longa estrada da autoreflexão pode ajudar a nos conhecer profundamente. Não podemos esquecer que na personalidade ainda existem outros elementos como as lembranças, os traumas, dores, experiências acumuladas, herança genética e tantos outros fatores que irão compor o grande mosaico do Eu.</p>
-
                     <p class="text-left">O homem que se dedicou em se analisar e em se observar no percurso de sua vida, e fez isso com dedicação e com a consciência de que nenhum outro conhecimento seria mais importante e de maior valor do que o autoconhecimento, pode em sua adultez psicológica dizer: eu sei quem sou, e mesmo essa afirmação não significa que encerramos a arte de nos conhecer, e que bom que seja assim, pois, não há prazer maior do que se descobrir a cada manhã.</p>
-
                     <p class="text-left">Nasci melancólico-sanguineo e não consigo imaginar esta jornada, agora já quase no final, de outra forma. As boas e más qualidades que eu precisava para me descobrir estavam lá, em meu interior. Amei e odiei meu temperamento, ri e chorei de mim mesmo, às vezes desejei ter tido outro, outras vezes me senti superior aos outros por conta dele, mas quando cheguei à maturidade simplesmente entendi que tinha exatamente o que precisava ter, o que não era motivo nem de orgulho, nem de medo só então depois disso tudo consegui dominá-lo.</p>
                 </div>
                 <br>
                 <div class="row" data-aos="zoom-in-up">
                     <h2>Por que estudar sobre os temperamentos?</h2><br>
-
                     <p class="text-left">Porque seremos melhores. Ansiamos por melhorar cada área de nosso ser. Essa vontade faz parte de nossa natureza, a edificação humana. Através desse estudo você poderá amadurecer na compreensão de seus sentimento e atos.</p>
-
                     <p class="text-left">A mudança é real e não apenas isso, ela é necessária, não estamos fadados a morrermos como nascemos. Enquanto estamos vivos, não importa a idade que tenhamos, podemos nos mudar e podemos cooperar na mudança daqueles que estão próximos de nós. Por isso existe ensino, educação, discipulado, amizade, amor. Ninguém se muda sozinho, na verdade todo crescimento interior se dá por meio de duas forças, interna e externa. É a minha força de vontade aliada a ajuda de quem caminha comigo que trará a transformação. Ao longo da senda já quase percorrida devo a muitos a consciência de quem sou. Cada palavra e cada exemplo de como se deve e como não se deve ser, compõe um pequeno tijolo desse enorme edifício em que me torno.</p>
-
                     <p class="text-left">Por isso, o estudo desse assunto, para nos conhecer melhor, para entender melhor quem está ao meu lado, para ser apoio ao que anseia mudar sua vida, para facilitar o processo de transformação. É preciso ter em mente, porém, que os conhecimentos que adquiro devem sempre servir para o bem e nunca para manipular o mais frágil, machucar o mais sensível, pois fazendo assim me afasto da humanidade que em mim luta contra a condição primitiva do que fui.</p>
-
                     <p class="text-left">Enfim, precisamos entender sobre o conjunto das qualidades de nossa alma para dominar as partes negativas de nossa personalidade, porque enquanto não o fizermos seremos escravos de nossas emoções, de nossos desejos. Escravo de erros e dores que se repetem ciclicamente ao longo de nossa existência, impedindo a compreensão de quem realmente somos.</p>
-
                     <p class="text-left">Não é possível mudar ou estinguir o tempero com o qual nascemos, quem nasce com o temperamento Fleumático morrerá com o mesmo temperamento, mas podemos e devemos ser senhores de nossas emoções, podemos de forma racional estarmos acima das características brutas que tanto nos atrapalham em nossos relacionamentos, isso sim, é a verdadeira adultez, um estado sólido de mente e alma e não somente um acúmulo de anos mal vividos. Conhecer sobre temperamentos é aprender sobre si mesmo e sobre o próximo. O objetivo é melhorar a inter-relação em casa e na sociedade através de um autoencontro.</p>
                 </div>
                 <br>
                 <div class="row" data-aos="zoom-in-up">
                     <h2>Temperamento e seus sujeitos</h2><br>
-
                     <p class="text-left">Todo livro ou texto na internet que já li sobre esse assunto trata do tempero da personalidade de forma isolada: Colérico, Fleumático, Melancólico e Sanguineo, ou seja, o Fleumático é um temperamento, o Melancólico é outro e assim por diante, mas eles nunca estão isolados no indivíduo, não existe uma pessoa que seja simplesmente sanguínea ou somente colérica, na verdade quase todas as pessoas possuem a combinação de dois deles, nunca três, e algumas poucas a combinação dos quatro. Então, se você possui a combinação do Colérico com o Fleumático esse será o seu tempero, Colérico-Fleumático, um temperamento, dois sujeitos.</p>
-
-                    <p class="text-left">Temos então, quatro sujeitos: Melancólico, Sanguíneo, Fleumático e o Colérico. Quatro sujeitos com características diferenciadas, simpáticas e antipáticas, convergentes e divergentes, introvertidas e extrovertidas que ao se combinarem temperarão o indivíduo, dando o sabor específico para cada relacionamento, é a diversidade causando a harmonia.</p>
+                    <p class="tex-left">Temos então, quatro sujeitos: Melancólico, Sanguíneo, Fleumático e o Colérico. Quatro sujeitos com características diferenciadas, simpáticas e antipáticas, convergentes e divergentes, introvertidas e extrovertidas que ao se combinarem temperarão o indivíduo, dando o sabor específico para cada relacionamento, é a diversidade causando a harmonia.</p>
 
                     <h2>Sujeitos dos Temperamentos</h2><br>
                 </div>
 
-                <div class="row" data-aos="zoom-in-up">
+                <div class="row d-flex justify-content-center" id="quais_sao" data-aos="zoom-in-up" style="width: 100%;">
 
-
-                    <table border="2" cellspacing="0" cellpadding="0">
+                    <table class="styled-table table-round-corner" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <td colspan="2" valign="top">Sujeitos Extrovertidos</td>
+                                <td colspan="2" valign="top">Sujeitos Introvertidos</td>
+                            </tr>
+                        </thead>
                         <tbody>
+
                             <tr>
-                                <td valign="top"><p class="text-left"><em>Sujeitos Extrovertidos</em></p></td>
-                                <td valign="top"><p class="text-left"><em>Sujeitos Introvertidos</em></p></td>
+                                <td colspan="2" valign="top">Colérico</td>
+                                <td colspan="2" valign="top">Fleumático</td>
                             </tr>
 
                             <tr>
-                                <td valign="top"><p class="text-left">Colérico</p></td>
-                                <td valign="top"><p class="text-left">Fleumático</p></td>
-                            </tr>
-
-                            <tr>
-                                <td valign="top"><p class="text-left">Sanguíneo</p></td>
-                                <td valign="top"><p class="text-left">Melancólico</p></td>
+                                <td colspan="2" valign="top">Sanguíneo</td>
+                                <td colspan="2" valign="top">Melancólico</td>
                             </tr>
 
                         </tbody>
@@ -81,21 +81,13 @@
                 <div class="row" data-aos="zoom-in-up">
 
                     <h2 class="text-left">Sujeito Ativo e Sujeito Passivo</h2>
-
                     <p class="text-left">Entendemos então, que temperamento é a combinação dos sujeitos Colério, Fleumático, Melancólico ou Sanguíneo. Essa combinação no entanto não se dá 50 a 50% um sujeito sempre predominará em relação ao outro. Esse que predomina se manifesta com maior frequência e com</p>
-
                     <p class="text-left">maior força, de maneira que um Sanguíneo-Melancólico na maior parte do seu dia será mais extrovertido, mais falante, porém, de forma repentina essa pessoa pode se fechar a ponto de causar estranheza em seus amigos, pois, por alguma ação externa o segundo sujeito, Melancólico foi estimulado.</p>
-
                     <p class="text-left">O sujeito que predomina é o ativo do temperamento, enquanto o que se manifesta de maneira mais tímida é o passivo. Exemplo: Se você tem a maior parte de suas características de Colério e a menor parte de Fleumático, então o Colérico é o ativo e o Fleumático o passivo, mas caso se dê o contrário, o Fleumático será o ativo e o Colérico o passivo. Vamos usar os outros sujeitos para uma melhor compreensão, se uma pessoa tem o temperamento Melancólico-Sanguíneo, as características do sujeito Melancólico se manifestarão com mais freqüência e logo, ele será o ativo, enquanto que o Sanguíneo será o sujeito passivo.</p>
-
                     <p class="text-left">Quando você conhece uma pessoa, em geral entra-se em contato com o sujeito ativo de seu temperamento, o sujeito passivo tende a se revelar somente com uma convivência mais duradoura. Por isso muitos costumam estranhar o companheiro depois de um tempo de convivência diária. O contrário pode ocorrer? Sim, apesar de ser muito raro, o sujeito passivo pode se apresentar de maneira mais expressiva. Um menino sanguíneo por ser muito inquieto pode ser reprimido de forma traumática a ponto de seu temperamento passivo Melancólico se tornar mais expressivo que o Sanguíneo.</p>
-
                     <p class="text-left">Quando uma pessoa possui um temperamento com sujeitos tão contrastantes como Sanguíneo-Melancólico é comum a pessoa ter mudanças repentinas de ânimo. Ela pode agir de forma eufórica e amistosa com os que estão à sua volta, e de repente ficar triste e amuada sem nenhuma razão aparente, isso pode ocorrer principalmente na fase da adolescência. É importante que isso não seja confundido com bipolaridade ou qualquer outro distúrbio.</p>
-
                     <p class="text-left">Uma criança que possua um temperamento Real Extrovertido, Sanguíneo-Colérico, não vai conseguir ficar parada, ainda que sejam cinco minutos, é muita energia para ser gasta, não podemos confundir essa condição com TDH.</p>
-
                     <p class="text-left">Dentro desse contexto, uma criança Real Introvertida, Fleumática-Melancólica, passará um bom tempo do seu dia imaginando-se em outro mundo, completamente absorta em suas fantasias, o que fará que não se concentre em quase nada do que é dito a ela, o que não pode seu confundido com TDA.</p>
-
                     <p class="text-left">Esses incômodos que se afloram principalmente na adolescência, quando ocorre de forma normal, geralmente na fase da adultês, costumam passar ou pelo menos diminuir de intensidade.</p>
                 </div>
 
@@ -105,70 +97,54 @@
                     <h2>Temperamento extrovertido e Introvertido</h2><br>
 
                     <p class="text-left">Quando eu posso dizer que sou uma pessoa introvertida? Também não será uma resposta tão simples, quando se trata da mente humana nada é tão simples. Quando o meu temperamento for composto por dois sujeitos extrovertidos, então serei extrovertido, quando for por dois introvertidos serei introvertido.</p>
-
                     <p class="text-left">Quando o sujeito ativo for introvertido, então eu serei uma pessoa pseudointrovertida. Quando o sujeito ativo for extrovertido, então eu serei uma pessoa pseudoextrovertida. Para facilitar a compreensão segue uma tabela.</p>
                 </div>
 
                 <div class="row" data-aos="zoom-in-up">
-                    <table border="5" cellspacing="0" cellpadding="0">
+                    <table class="styled-table table-round-corner" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <td colspan="2" valign="top">Temperamento Extrovertido</td>
+                                <td colspan="2" valign="top">Temperamento Introvertido</td>
+                            </tr>
+                        </thead>    
                         <tbody>
                             <tr>
-                                <td colspan="2" valign="top"><p class="text-left"><em>Temperamento Extrovertido</em></p></td>
-                                <td colspan="2" valign="top"><p class="text-left"><em>Temperamento Introvertido</em></p></td>
-                            </tr>
-
-                            <tr>
                                 <td colspan="2" valign="top">
-
-                                    <p class="text-left">1. Sanguíneo-Fleumático</p>
-                                    <p class="text-left">(Pseudoextrovertido)</p>
-                                    <p class="text-left">2. Sanguíneo-Melancólico</p>
-                                    <p class="text-left">(Pseudoextrovertido)</p>
-                                    <p class="text-left">3. Sanguíneo-Colérico</p>
-                                    <p class="text-left">(Real extrovertido)</p>
-
+                                        1. Sanguíneo-Fleumático<br>
+                                        (Pseudoextrovertido)<br>
+                                        2. Sanguíneo-Melancólico<br>
+                                        (Pseudoextrovertido)<br>
+                                        3. Sanguíneo-Colérico<br>
+                                        (Real extrovertido)<br>
                                 </td>
 
                                 <td colspan="2" valign="top">
-                                    <p class="text-left">1. Melancólico-Colérico </p>
-
-                                    <p class="text-left">(Pseudointrovertido)</p>
-
-                                    <p class="text-left">2. Melancólico-Sanguíneo</p>
-
-                                    <p class="text-left">(Pseudointrovertido)</p>
-
-                                    <p class="text-left">3. Melancólico-Fleumático</p>
-
-                                    <p class="text-left">(Real introvertido)</p>
+                                        7. Melancólico-Colérico <br>
+                                        (Pseudointrovertido)<br>
+                                        8. Melancólico-Sanguíneo<br>
+                                        (Pseudointrovertido)<br>
+                                        9. Melancólico-Fleumático<br>
+                                        (Real introvertido)<br>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td colspan="2" valign="top">
-
-                                    <p class="text-left">1. Colérico-Fleumático</p>
-                                    <p class="text-left">(Pseudoextrovertido)</p>
-                                    <p class="text-left">2. Colérico-Melancólico</p>
-                                    <p class="text-left">(Pseudoextrovertido)</p>
-                                    <p class="text-left">3. Colérico-Sanguíneo</p>
-                                    <p class="text-left">(Real extrovertido)</p>
-
-
+                                        4. Colérico-Fleumático<br>
+                                        (Pseudoextrovertido)<br>
+                                        5. Colérico-Melancólico<br>
+                                        (Pseudoextrovertido)<br>
+                                        6. Colérico-Sanguíneo<br>
+                                        (Real extrovertido)<br>
                                 </td>
                                 <td colspan="2" valign="top">
-
-                                    <p class="text-left">1. Fleumático-Sanguíneo</p>
-
-                                    <p class="text-left">(Pseudointrovertido)</p>
-
-                                    <p class="text-left">2. Fleumático-Colérico</p>
-
-                                    <p class="text-left">(Pseudointrovertido)</p>
-
-                                    <p class="text-left">3. Fleumático-Melancólico</p>
-
-                                    <p class="text-left">(Real introvertido)</p>
+                                        10. Fleumático-Sanguíneo<br>
+                                        (Pseudointrovertido)<br>
+                                        11. Fleumático-Colérico<br>
+                                        (Pseudointrovertido)<br>
+                                        12. Fleumático-Melancólico<br>
+                                        (Real introvertido)<br>
                                 </td>
                             </tr>
 
@@ -184,16 +160,11 @@
                     <h2>Qualidade dos sujeitos</h2><br>
 
                     <p class="text-left">As características dos sujeitos que determinam superioridade de um temperamento em relação ao outro, por isso não sentido em comparações imaturas de que este temperamento é melhor ou pior que aquele. Cada temperamento se destaca segundo suas qualidades, uns serão destaque nas atividades esportivas, outros nas artísticas, outros na matemática e assim por diante, ou seja, um temperamento será melhor que o outro em seu próprio campo de atuação, mas não existe um temperamento que seja o melhor. O que fazemos com cada uma de nossas qualidades é que determinará a nossa evolução ou a nossa estagnação.</p>
-
                     <p class="text-left">Geralmente os sujeitos possuem as mesmas características, porque são qualidade gerais da humanidade, por exemplo, todos nós possuímos melancolia, cólera, apatia e entusiasmo, faz parte da natureza humana, mas temos o costume de observar apenas o que se destaca, a ira se destaca nos comportamentos dos coléricos e por isso achamos que os fleumáticos não são irados, mas quando eles explodem em ira deixam qualquer sujeito colérico como aprendiz da raiva. E o que dizer da melancolia, todo homem que questionar o sentido da vida, independente do temperamento que possua, irá carregar por um longo tempo um rosto taciturno e um ar melancólico, até que encontre sua resposta, ou seja, o temperamento irá determinar muito mais a forma como a qualidade vai se manifestar, e não se tal Sujeito tem uma característica e outro não. No final da análise do comportamento humano não somos tão diferentes na composição de nossa essência.</p>
-
                     <p class="text-left">Algumas poucas características pertencem realmente de maneira específica a algum sujeito, a afabilidade por exemplo é qualidade exclusiva do sanguíneo, entretanto, a maior parte dos atributos está para todos os quatro sujeitos. O que diferencia é como determinada qualidade agirá e</p>
-
                     <p class="text-left">reagirá na vida do indivíduo, por exemplo, o egoísmo é uma característica humana, mas o melancólico estampará essa qualidade na vitrine de sua alma, ele sequer tenta disfarçar o seu egoísmo, somente o que é dele importa, os incomodados que se retirem. Outro exemplo é a raiva, qualquer pessoa uma vez contrariada em seus desejos, terá uma reação raivosa, o colérico, no entanto, não precisa um bom motivo para se irar, ele quer ter raiva e vai ter raiva, isso basta. Sendo assim, entenderemos nesse livro como algumas emoções e alguns sentimentos agem e reagem de acordo com cada sujeito.</p>
-
                     <p class="text-left">Características a serem consideradas</p>
-
-                    <p class="text-left">Os atributos dos Sujeitos aqui propostos são os mais relevantes para uma melhor identificação de si mesmo, é claro que há muitos outros que não se encontram aqui, mas creio serem suficientes os que aqui se encontram para uma boa autodescoberta.</p>
+                    <p  id="colerico" class="text-left">Os atributos dos Sujeitos aqui propostos são os mais relevantes para uma melhor identificação de si mesmo, é claro que há muitos outros que não se encontram aqui, mas creio serem suficientes os que aqui se encontram para uma boa autodescoberta.</p>
                 </div>
 
                 <br>
@@ -272,10 +243,10 @@
 
                     <p class="text-left">A simples ideia de precisar de uma outra pessoa é suficiente para deixar o colérico irritado, pois julga que sozinho trabalha melhor e companheiros irão apenas atrapalhar, se for para ser equipe que seja com ele delegando serviços. Se o trabalho for mais prático que teórico, pode ser que ele esteja certo no ponto em que sozinho produzirá mais rápido, mas não melhor, pois o trabalho em equipe oferece um crescimento de grande importância para os relacionamentos.</p>
 
-                    <p class="text-left">A independência até um certo nível é benéfica, não é bom precisar o tempo todo das pessoas, aliás essa é uma das características do amadurecimento. Uma pessoa emocionalmente madura é uma pessoa independente, mas preciso entender que a vida é construída através de parcerias, ninguém é tão forte ou capaz a ponto de não precisar de ajuda, caso contrário esse atributo se torna um defeito que destruirá os relacionamentos, famílias, amizades, tudo.</p>
+                    <p id="fleumatico" class="text-left">A independência até um certo nível é benéfica, não é bom precisar o tempo todo das pessoas, aliás essa é uma das características do amadurecimento. Uma pessoa emocionalmente madura é uma pessoa independente, mas preciso entender que a vida é construída através de parcerias, ninguém é tão forte ou capaz a ponto de não precisar de ajuda, caso contrário esse atributo se torna um defeito que destruirá os relacionamentos, famílias, amizades, tudo.</p>
                 </div>
 
-                <div data-aos="zoom-in-up">
+                <div  data-aos="zoom-in-up">
                     <h1 class="text-left">Fleumático</h1>
                     <br>
                     <p class="text-left">· Positiva: Calmo, Cumpridor, Eficiente, Sociável.</p>
@@ -342,10 +313,10 @@
 
                     <p class="text-left">O que define bem essa característica é a intensidade em que o fleumático manifesta seus momentos de alegria ou tristeza. Não é difícil de percebê-lo triste ou alegre, mas tais momentos serão sempre contidos, ouvir uma gargalhada escancarada e sem vergonha dele é quase impossível.</p>
 
-                    <p class="text-left">Esse atributo é bem percebido na expressão facial e corporal. Sembrantes com poucas alterações ainda que expressem emoções fortes e diferenciadas, andar.</p>
+                    <p id="melancolico" class="text-left">Esse atributo é bem percebido na expressão facial e corporal. Sembrantes com poucas alterações ainda que expressem emoções fortes e diferenciadas, andar.</p>
                 </div>
 
-                <div data-aos="zoom-in-up">
+                <div id="melancolico" data-aos="zoom-in-up">
 
                     <h1 class="text-left">Melancólico</h1>
                     <br>
@@ -418,7 +389,7 @@
 
                     <p class="text-left"><em>10. </em>Sensível: Que se deixa comover com facilidade. <sub>Dicionário online</sub></p>
 
-                    <p class="text-left">Essa é uma característica que depende de sua intensidade para causar algum prejuízo, a sensibilidade quando não exacerbada pode contribuir para um bom acolhimento do próximo, pode oferecer melhor</p>
+                    <p id="sanguineo" class="text-left">Essa é uma característica que depende de sua intensidade para causar algum prejuízo, a sensibilidade quando não exacerbada pode contribuir para um bom acolhimento do próximo, pode oferecer melhor</p>
 
                     <div data-aos="zoom-in-up">
 
@@ -493,7 +464,7 @@
 
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 </main>
 

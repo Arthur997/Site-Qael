@@ -1,12 +1,14 @@
 {% extends "base.html" %}
+<title> {% block title %}Totem gato - Qael{% endblock %}</title>
 {% block content %}
 
     <main class="page landing-page">
         <section class="clean-block clean-info dark" style="background-color: rgba(172,112,201,0.14);margin-top: -30px;">
-            <div class="container">
+            <article class="container">
                 <div data-aos="zoom-in-up" class="block-heading" style="filter: grayscale(0%);">
                     <h1 class="display-4 text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;"><strong>Gato</strong></h1>
-                    <h4 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;">Liberdade<br></h4><img class="img-fluid" src="{{ url_for('static', filename='img/gato.jpg')}}" style="width: 558px;"></div>
+                    <h4 class="text-nowrap text-truncate text-center" style="font-weight: normal;font-style: normal;">Liberdade<br></h4><img class="img-fluid" src="{{ url_for('static', filename='img/gato.jpg')}}" style="width: 558px;">
+                </div>
                 <div class="row align-items-center" data-aos="zoom-in-up">
                     <div class="col" style="padding-top: 35px;margin-top: -30px;">
                         <div class="text-left getting-started-info">
@@ -19,9 +21,11 @@
                                 vozes e visões também ocorrem na comunicação espiritual oferecida pelo totem. É importante<br>entender que tais comunicações não ocorrem apenas pela influência desse totem, muitas são as formas do mundo espiritual se comunicar,
                                 o gato é apenas uma dessas formas.<br><br>&nbsp; &nbsp; Quando se fala do mistério do gato estamos falando desse desvelar das mensagens do mundo astral, isso<br>difere muito do mistério da coruja.&nbsp; Os olhos felinos
                                 definem bem esse mistério. Eles veem o que ninguém mais vê. Enquanto todos dormem, eles caminham pela noite e observam o mundo não visível.<br><br></p>
-                        </div><a class="btn btn-outline-light btn-lg d-lg-flex justify-content-lg-center" role="button" href="/totem" style="background-position: center;background-color: rgba(80,38,130,0.94);color: rgb(255,255,255);width: 93px;">Voltar</a></div>
+                        </div>
+                        <a class="btn btn-outline-light btn-lg d-lg-flex justify-content-lg-center" role="button" href="/totem" style="background-position: center;background-color: rgba(80,38,130,0.94);color: rgb(255,255,255);width: 93px;">Voltar</a>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
 

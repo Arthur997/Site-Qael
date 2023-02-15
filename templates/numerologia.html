@@ -1,12 +1,18 @@
 {% extends "base.html" %}
-<title> {% block title %}Se conheça melhor com a Numerologia{% endblock %}</title>
+
+<title> {% block title %}Se conheça melhor com a Numerologia de Qael{% endblock %}</title>
+        {% block title_meta %}Se conheça melhor com a Numerologia de Qael{% endblock %}
+
+{% block description %}Baixe os arquivos relevantes da comunidade.A numerologia permite a interpretação de nomes, situações e personalidades,
+baseando-se na simbologia dos números e trazendo, assim, ensinamentos. Através dessa crença podemos saber qual é a nossa missão de vida e descobrir se estamos na direção correta para alcançá-la. {% endblock %}
+
 {% block content %}
 
 <main class="page registration-page">
     <section class="clean-block clean-form dark" style="background-color: rgba(172,112,201,0.14); margin-top: -30px;">
-        <div class="container">
+        <article class="container">
             <div class="block" style="padding-top: 50px; max-width:900px; margin: auto;">
-                <h1 class="text-info">Se conheça melhor com a Numerologia de Qael</h1>
+                <h1>Se conheça melhor com a Numerologia de Qael</h1>
                 <p>
                     A numerologia permite a interpretação de nomes, situações e personalidades,
                     baseando-se na simbologia dos números e trazendo, assim, ensinamentos. Através dessa crença podemos saber qual é a nossa missão de vida e descobrir se estamos na direção correta para alcançá-la.
@@ -34,7 +40,7 @@
                 </div>
                 <button class="btn btn-primary btn-block" type="submit" id="calcular" style="background-color: rgba(80,38,130,0.94);">Calcular</button>
             </form>
-        </div>
+        </article>
     </section>
 </main>
 
